@@ -177,3 +177,27 @@ Au cours de cette SAÉ nous devions en binôme réaliser l'installation sur mach
 Cette SAÉ avait pour but de mobiliser la compétence 3 et s'associait à la R1.04 (Intro Systèmes) et la R1.10 (Anglais)
 
 <img src="image.png">
+
+<h5 class="centrer">SAÉ 1.04 - Création d'une base de données</h5>
+
+Pour cette SAÉ nous étions par groupes de 4, nous entrions dans le rôle d'une entreprise qui construisait une base de données. Dans notre cas nous étions un studio de jeux vidéos, la base de données contenait donc des villes, des prix, des catégories, des employés et beaucoup d'autres informations.
+
+Nous devions fournir un schéma Entité/Association, un jeu de données, des scripts de création des tables et de chargement des données, des questions formulées comme des exercices se basant à la fois sur notre schéma et sur notre jeu de données.
+
+Nous devions aussi évaluer le rendu d'un autre groupe.
+
+<img src="image-3.png">
+
+<h5 class="centrer">SAÉ 1.05 - Recueil de besoins</h5>
+
+Pour cette SAÉ nous avions la tâche de recueillir les besoins d'une autre équipe dans l'optique de réaliser la communication autour d'un escape game dont ils ont choisi le thème.
+
+Nous devions d'abord choisir parmi 5 propositions aléatoires qui nous étaient données via ChallengeMe. On les a évalué et ensuite on a choisi celle dont on allait faire la communication web, l'affiche/flyer ainsi que le pitch des énigmes.
+
+Nous avions proposé un Escape Game sur le thème Star Trek mais je pense pas qu'un groupe en ai fait la communication.
+
+On a choisi un Escape Game dans lequel un jet privé était détourné par des hackers qui allait faire s'écraser l'avion, il fallait donc s'échapper en sautant en parachute. Le sujet nous inspirait plus que les autres et avec mes connaissances de passionné de l'aéronautique je pouvais donc apporter des easter eggs aux épreuves. Déjà que l'équipe qui a eu l'idée du thème avait glissé quelques détails propres au domaine.
+
+Voilà une capture d'écran du site. Malheureusement je n'ai plus le flyer.
+
+<img src="image-4.png" height="50%">
