@@ -1,4 +1,8 @@
-*.pdf
+*
+!.gitignore
+!*.png
+!*.md
 !22402253 Semestre 1 BUT 1 Info.pdf
 !annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf
 !SAE 421 Maths ROCAFORT LUBEN.pdf
+!Détails_des_Notes_JORDI_ROCAFORT.pdf
