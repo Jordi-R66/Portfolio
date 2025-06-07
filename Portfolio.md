@@ -84,7 +84,7 @@
 
 <h3 class="centrer">Premier Semestre</h3>
 
-<p class="centrer" style="font-style: italic;">En raison d'un changement de PC et d'un premier portfolio peu rempli je n'ai aucune archive du premier semestre</p>
+<p class="centrer" style="font-style: italic;">En raison d'un changement de PC et d'un premier portfolio peu rempli je n'ai plus certaines archives du premier semestre</p>
 
 <h4 class="centrer">SAÉs</h4>
 
