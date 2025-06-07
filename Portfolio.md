@@ -2,6 +2,11 @@
 	.centrer {
 		text-align: center;
 	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
 </style>
 
 <h1 class="centrer">Portfolio</h1>
@@ -75,3 +80,100 @@
 
 ---
 
+<h2 class="centrer">Première Année</h2>
+
+<h3 class="centrer">Premier Semestre</h3>
+
+<p class="centrer" style="font-style: italic;">En raison d'un changement de PC et d'un premier portfolio peu rempli je n'ai aucune archive du premier semestre</p>
+
+<h4 class="centrer">SAÉs</h4>
+
+<h5 class="centrer">SAÉ 1.01 & 1.02 - Développement AKA 421</h5>
+
+Les SAÉs 1.01 et 1.02 ont été réunies sous une SAÉ : le jeu du 421 qui se joue avec 3 dés et entre au moins 2 joueurs.
+
+Elles étaient toutes les deux à réaliser en binôme.
+
+La 1.01 portait sur la partie développement du jeu et mobilisait donc la compétence 1, elle était divisée en 3 livrables. Voici des extraits de code, plusieurs fonctions devaient être réalisées par nous-même
+
+```java
+public static void ordonnerResultat(int[] resultat) {
+	// Il s'agit d'une implémentation de Bubble Sort
+	// (certes c'est du O(n^2) mais pour 3 éléments ça va)
+	int n = resultat.length;
+
+	boolean ValeurEchangée;
+
+	do {
+		ValeurEchangée = false;
+
+		for (int i = 0; i < (n - 1); i++) {
+			if (resultat[i] > resultat[i + 1]) {
+				echangerElementsTableau(resultat, i, i + 1);
+				ValeurEchangée = true;
+			}
+		}
+
+		n--;
+	} while (ValeurEchangée);
+}
+```
+
+```java
+public static void genererFiguresEtPoints(int[][] figures, int[] pointsFigures) {
+	int[][] figuresSpeciales = new int[][] {
+		{ 3, 2, 1 }, { 4, 3, 2 }, { 5, 4, 3 }, { 6, 5, 4 },
+		{ 2, 1, 1 }, { 2, 2, 2 }, { 3, 1, 1 }, { 3, 3, 3 },
+		{ 4, 1, 1 }, { 4, 4, 4 }, { 5, 1, 1 }, { 5, 5, 5 },
+		{ 6, 1, 1 }, { 6, 6, 6 }, { 1, 1, 1 }, { 4, 2, 1 }
+	};
+
+	int[] pointFiguresSpeciales = new int[] { 
+		2, 2, 2, 2, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 11};
+
+	int i = 0;
+
+	for (int x1 = 1; x1 <= 6; x1++) {
+		for (int x2 = 1; x2 <= x1; x2++) {
+			for (int x3 = 1; x3 <= x2; x3++) {
+				int[] r = new int[] { x1, x2, x3 };
+				ordonnerResultatDec(r);
+
+				if (!contientFigureTabFigures(r, figuresSpeciales)) {
+					figures[i] = r;
+					i++;
+				}
+			}
+		}
+	}
+
+	for (int j = 0; j < figuresSpeciales.length; j++) {
+		figures[i + j] = figuresSpeciales[j];
+	}
+
+	for (i = 0; i < figures.length; i++) {
+		for (int j = 0; j < figuresSpeciales.length; j++) {
+			if (figuresIdentiques(figures[i], figuresSpeciales[j])) {
+				pointsFigures[i] = pointFiguresSpeciales[j];
+			}
+		}
+
+		if (pointsFigures[i] == 0) {
+			pointsFigures[i] = 1;
+		}
+	}
+}
+```
+<img src="image-1.png">
+
+La SAE 1.02 portait quant à elle sur une étude mathématique du jeu, en particulier sur la comparaison d'algorithmes pour aborder le jeu. Elle mobilisait donc la compétence 2 avec notamment la R1.07 (Maths Discrètes).
+
+<img src="image-2.png">
+
+<h5 class="centrer">SAÉ 1.03 - Installation d'un poste</h5>
+
+Au cours de cette SAÉ nous devions en binôme réaliser l'installation sur machine virtuelle ainsi qu'en dual boot d'une distribution linux de notre choix, notre choix s'était porté sur Linux Mint.
+
+Cette SAÉ avait pour but de mobiliser la compétence 3 et s'associait à la R1.04 (Intro Systèmes) et la R1.10 (Anglais)
+
+<img src="image.png">
