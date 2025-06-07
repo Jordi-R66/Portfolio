@@ -201,3 +201,5 @@ On a choisi un Escape Game dans lequel un jet privé était détourné par des h
 Voilà une capture d'écran du site. Malheureusement je n'ai plus le flyer.
 
 <img src="image-4.png" height="50%">
+
+<img src="image-5.png">
