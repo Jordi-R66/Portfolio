@@ -164,6 +164,7 @@ public static void genererFiguresEtPoints(int[][] figures, int[] pointsFigures) 
 	}
 }
 ```
+
 <img src="image-1.png">
 
 La SAE 1.02 portait quant à elle sur une étude mathématique du jeu, en particulier sur la comparaison d'algorithmes pour aborder le jeu. Elle mobilisait donc la compétence 2 avec notamment la R1.07 (Maths Discrètes).
@@ -180,7 +181,7 @@ Cette SAÉ avait pour but de mobiliser la compétence 3 et s'associait à la R1.
 
 <h5 class="centrer">SAÉ 1.04 - Création d'une base de données</h5>
 
-Pour cette SAÉ nous étions par groupes de 4, nous entrions dans le rôle d'une entreprise qui construisait une base de données. Dans notre cas nous étions un studio de jeux vidéos, la base de données contenait donc des villes, des prix, des catégories, des employés et beaucoup d'autres informations.
+Pour cette SAÉ de BDD (R1.05) portant sur la compétence 4 nous étions par groupes de 4, nous entrions dans le rôle d'une entreprise qui construisait une base de données. Dans notre cas nous étions un studio de jeux vidéos, la base de données contenait donc des villes, des prix, des catégories, des employés et beaucoup d'autres informations.
 
 Nous devions fournir un schéma Entité/Association, un jeu de données, des scripts de création des tables et de chargement des données, des questions formulées comme des exercices se basant à la fois sur notre schéma et sur notre jeu de données.
 
@@ -196,10 +197,31 @@ Nous devions d'abord choisir parmi 5 propositions aléatoires qui nous étaient 
 
 Nous avions proposé un Escape Game sur le thème Star Trek mais je pense pas qu'un groupe en ai fait la communication.
 
-On a choisi un Escape Game dans lequel un jet privé était détourné par des hackers qui allait faire s'écraser l'avion, il fallait donc s'échapper en sautant en parachute. Le sujet nous inspirait plus que les autres et avec mes connaissances de passionné de l'aéronautique je pouvais donc apporter des easter eggs aux épreuves. Déjà que l'équipe qui a eu l'idée du thème avait glissé quelques détails propres au domaine.
+On a choisi un Escape Game dans lequel un jet privé était détourné par des hackers qui allait faire s'écraser l'avion, il fallait donc s'échapper en sautant en parachute. Le sujet nous inspirait plus que les autres et avec mes connaissances de passionné de l'aéronautique je pouvais donc apporter des connaissances techniques aux épreuves. Déjà que l'équipe qui a eu l'idée du thème avait glissé quelques détails propres au domaine.
+
+Cette SAÉ portait sur la compétence 5, la communication (R1.11) et le développement web (R1.02).
 
 Voilà une capture d'écran du site. Malheureusement je n'ai plus le flyer.
 
 <img src="image-4.png" height="50%">
 
+<br>
+
+<p class="centrer">Voilà la note que j'ai eu à cette SAÉ</p>
+
+<br>
+
 <img src="image-5.png">
+
+<h5 class="centrer">SAÉ 1.06 - Controverse</h5>
+
+Il s'agit là de la SAÉ de communication (R1.11) elle combinait aussi l'économie durable et numérique (R1.09) et concernait la compétence 6, nous devions choisir une controverse liée aux algorithmes utilisant les statistiques pour influencer les choix
+
+Dans notre cas c'était sur les décisions en Ressources Humaines et l'impact des décisions prises via ces algorithmes sur la vie des individus.
+
+Nous devions réaliser un poster scientifique sur la controverse ainsi qu'un site web.
+
+<img src="image-6.png">
+
+<h4 class="centrer">Les résultats</h4>
+
