@@ -323,3 +323,94 @@ Le Figma de l'appli
 
 <h4 class="centrer">À côté des cours</h4>
 
+<h5 class="centrer">Code Game Jam - 9ème édition</h5>
+
+Fin Janvier s'est tenue la neuvième édition de la Code Game Jam organisée, le thème de cette édition était **Mélodie à l'infini**.
+
+Avec Bastien, Clément et Romain (Team Yolo - Partie 2) nous avons développé le jeu "The Symphony Of Stars" en Java avec LibGDX, on a été maso sur ce coup-là. On a tiré notre inspiration de jeux comme Star Citizen (si on demande à Romain) et Elite Dangerous (si on me demande)
+
+J'étais en charge de la mise en place des systèmes de coordonnées pour les planètes, des conversions entre ces derniers
+
+J'ai donc travaillé sur les coordonnées absolues des étoiles dans l'espace, les coordonnées relatives au vaisseau (au joueur/caméra), les coordonnées dans la fenêtre ainsi que sur le calcul de la taille apparente de l'étoile en fonction de sa distance.
+
+Voilà le code pour le calcul des coordonnées relatives au vaisseu
+```java
+public void reComputeRelativeCoords(AbsoluteCoords3D spaceshipCoords3d) {
+	float[] Delta3D = spaceshipCoords3d.getDelta(this.coords3d);
+
+	this.xRel = Delta3D[0];
+	this.yRel = Delta3D[1];
+	this.zRel = Delta3D[2];
+
+	this.distance = (long)Math.sqrt(Ut.pow(xRel, 2.0f) + Ut.pow(yRel, 2.0f) + Ut.pow(zRel, 2.0f)); // Distance de l'étoile au vaisseau
+
+	if (distance != 0) {
+		this.lat = (float)Math.asin(zRel / (float)distance);
+		this.lng = (float)Math.atan2(yRel / (float)distance, xRel / (float)distance);
+	} else {
+		this.lat = 0;
+		this.lng = 0;
+	}
+}
+```
+
+Pour les coordonnées dans le champ de vision
+```java
+public void reComputeFOVCoords(SpaceshipRelative objRelativeCoords) {
+	float DeltaLat, DeltaLng;
+
+	float[] objCoords = objRelativeCoords.getLatLong();
+	float[] fovCoords = this.FOV.getCenterCoords();
+	float[] fovAngles = this.FOV.getFovAngles();
+
+	float fovX, fovY;
+
+	fovX = fovAngles[0];
+	fovY = fovAngles[1];
+
+	DeltaLat = objCoords[0] - fovCoords[0];
+	DeltaLng = objCoords[1] - fovCoords[1];
+
+	this.isVisible = ((fovCoords[0] + fovX / 2.f) >= objCoords[0]) && (objCoords[0] >= (fovCoords[0] - fovX / 2.f)) &&
+					 ((fovCoords[1] + fovY / 2.f) >= objCoords[1]) && (objCoords[1] >= (fovCoords[1] - fovY / 2.f));
+
+	if (this.isVisible) {
+		this.X = DeltaLng;
+		this.Y = DeltaLat;
+
+		this.normalisedX = X / (0.5f * fovX);
+		this.normalisedY = Y / (0.5f * fovY);
+	}
+}
+```
+
+Voilà un exemple de code qui est fonctionnel, mais est mal écrit juste parce que je l'ai fait à presque minuit, j'avais la flemme de transformer `otherCoords[0] - this.x` en `this.x - otherCoords[0]` donc j'ai juste changé les signes. Il est quand même important de se critiquer parfois, voilà donc un exemple.
+
+```java
+public float[] getDelta(AbsoluteCoords3D other) {
+	float DeltaX, DeltaY, DeltaZ;
+	float[] otherCoords = other.getCoords();
+
+	DeltaX = - otherCoords[0] + this.x;
+	DeltaY = - otherCoords[1] + this.y;
+	DeltaZ = - otherCoords[2] + this.z;
+
+	return new float[]{DeltaX, DeltaY, DeltaZ};
+}
+```
+
+J'ai aussi fait la skybox (image statique faite en deux minutes sur Paint.NET en jouant avec les fonctionnalités de bruit et en jouant sur les curseurs de contraste/luminosité).
+
+<h6 class="centrer">Screenshots du jeu :</h6>
+
+<img class="centrerImg" src="image-18.png">
+<img class="centrerImg" src="image-19.png">
+
+*J'ai adoré cette édition, j'ai tellement adoré que j'ai en quelques sortes rempli des rôles diplomatiques avec l'équipe de l'IUT de Calais.*
+
+Après la Game Jam j'ai fork le projet sur mon GitHub perso, d'autres membres de l'équipe voulaient continuer de le modifier dans leur coin, j'ai donc fait ce fork pour archiver.
+
+Voici le lien vers le [dépôt github](https://github.com/Jordi-R66/CodeGameJam2025-Continued). Vous pouvez aussi le télécharger depuis le [site officiel de la CGJ](https://cgj.bpaul.fr/vote/publicView).
+
+Nous avons caché un easter egg en l'honneur de M. Chollet, il faut trouver une certaine étoile rose et une musique se jouera, si vous n'arrivez pas à la jouer vous pouvez aller dans l'écran des crédits, la musique se déclenchera automatiquement (merci à Clément et Naïs pour avoir généré cette musique avec l'IA il y a un an).
+
