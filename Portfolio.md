@@ -166,11 +166,11 @@ public static void genererFiguresEtPoints(int[][] figures, int[] pointsFigures) 
 }
 ```
 
-<img class="centrerImg" src="image-1.png">
+![[image-1.png|center]]
 
 La SAE 1.02 portait quant à elle sur une étude mathématique du jeu, en particulier sur la comparaison d'algorithmes pour aborder le jeu. Elle mobilisait donc la compétence 2 avec notamment la R1.07 (Maths Discrètes).
 
-<img class="centrerImg" src="image-2.png">
+![[image-2.png|center]]
 
 <h5 class="centrer">SAÉ 1.03 - Installation d'un poste</h5>
 
@@ -178,7 +178,7 @@ Au cours de cette SAÉ nous devions en binôme réaliser l'installation sur mach
 
 Cette SAÉ avait pour but de mobiliser la compétence 3 et s'associait à la R1.04 (Intro Systèmes) et la R1.10 (Anglais)
 
-<img class="centrerImg" src="image.png">
+![[image.png|center]]
 
 <h5 class="centrer">SAÉ 1.04 - Création d'une base de données</h5>
 
@@ -188,7 +188,7 @@ Nous devions fournir un schéma Entité/Association, un jeu de données, des scr
 
 Nous devions aussi évaluer le rendu d'un autre groupe.
 
-<img class="centrerImg" src="image-3.png">
+![[image-3.png|center]]
 
 <h5 class="centrer">SAÉ 1.05 - Recueil de besoins</h5>
 
@@ -204,7 +204,7 @@ Cette SAÉ portait sur la compétence 5, la communication (R1.11) et le dévelop
 
 Voilà une capture d'écran du site. Malheureusement je n'ai plus le flyer.
 
-<img class="centrerImg" src="image-4.png" height="50%">
+![[image-4.png" height="50%">
 
 <br>
 
@@ -212,7 +212,7 @@ Voilà une capture d'écran du site. Malheureusement je n'ai plus le flyer.
 
 <br>
 
-<img class="centrerImg" src="image-5.png">
+![[image-5.png|center]]
 
 <h5 class="centrer">SAÉ 1.06 - Controverse</h5>
 
@@ -222,24 +222,24 @@ Dans notre cas c'était sur les décisions en Ressources Humaines et l'impact de
 
 Nous devions réaliser un poster scientifique sur la controverse ainsi qu'un site web.
 
-<img class="centrerImg" src="image-6.png">
+![[image-6.png|center]]
 
 ---
 
 <h4 class="centrer">Les résultats du semestre</h4>
 
-<img src="image-7.png">
+![[image-7.png|center]]
 
-<img src="image-8.png">
+![[image-8.png|center]]
 
-<img src="image-9.png">
+![[image-9.png|center]]
 
-<img src="image-10.png">
-<img src="image-11.png">
+![[image-10.png|center]]
+![[image-11.png|center]]
 
-<img src="image-12.png">
+![[image-12.png|center]]
 
-<img src="image-13.png">
+![[image-13.png|center]]
 
 À la fin du semestre 1 je visais le parcours RACDV pour lequel les compétences majeures sont C1, C2 et C6.
 
@@ -275,11 +275,11 @@ Cette SAÉ porte sur le réseau (R2.05), elle se faisait en 3 rendus dont le der
 
 Le premier rendu était la conception du réseau interne d'un espace de co-working, avec salle de réunion, open space, serveurs, administration/secrétariat, réseaux wifi et câblés. Nous devions donc réaliser un schéma de ce réseau, nous l'avons réalisé sur Filius et nous devions aussi penser à l'adressage IP, ce pour quoi mes cours de Terminale m'ont aidé afin de réaliser un adressage dimensionné pour être préparé à recevoir plus de machines dans le futur.
 
-<img class="centrerImg" src="image-14.png">
+![[image-14.png|center]]
 
 Et voici un exemple d'adressage IP, ici pour la salle des serveurs
 
-<img class="centrerImg" src="image-15.png">
+![[image-15.png|center]]
 
 Le deuxième rendu portait sur le choix de serveur de base de données, serveur web, serveur mail et d'un système de backup ainsi que de la recherche sur différents protocoles utilisés.
 
@@ -313,11 +313,11 @@ Sa capacité à allier rigueur, écoute et sens de l’initiative a largement co
 
 Et voici la preuve que ça vient de lui
 
-<img class="centrerImg" src="image-16.png">
+![[image-16.png|center]]
 
 Le Figma de l'appli
 
-<img class="centrerImg" src="image-17.png">
+![[image-17.png|center]]
 
 ---
 
@@ -403,8 +403,8 @@ J'ai aussi fait la skybox (image statique faite en deux minutes sur Paint.NET en
 
 <h6 class="centrer">Screenshots du jeu :</h6>
 
-<img class="centrerImg" src="image-18.png">
-<img class="centrerImg" src="image-19.png">
+![[image-18.png|center]]
+![[image-19.png|center]]
 
 *J'ai adoré cette édition, j'ai tellement adoré que j'ai en quelques sortes rempli des rôles diplomatiques avec l'équipe de l'IUT de Calais.*
 
