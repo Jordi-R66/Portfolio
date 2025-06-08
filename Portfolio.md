@@ -3,7 +3,7 @@
 		text-align: center;
 	}
 
-	img {
+	img.centrerImg {
 		display: block;
 		margin: 0 auto;
 	}
@@ -11,6 +11,7 @@
 
 <h1 class="centrer">Portfolio</h1>
 <p class="centrer">Jordi Rocafort | S4 - 2024-2025</p>
+<p class="centrer" style="font-style: italic;">Bonne chance pour lire toutes les pages</p>
 
 <h2 class="centrer">Rappel des compétences</h2>
 
@@ -165,11 +166,11 @@ public static void genererFiguresEtPoints(int[][] figures, int[] pointsFigures) 
 }
 ```
 
-<img src="image-1.png">
+<img class="centrerImg" src="image-1.png">
 
 La SAE 1.02 portait quant à elle sur une étude mathématique du jeu, en particulier sur la comparaison d'algorithmes pour aborder le jeu. Elle mobilisait donc la compétence 2 avec notamment la R1.07 (Maths Discrètes).
 
-<img src="image-2.png">
+<img class="centrerImg" src="image-2.png">
 
 <h5 class="centrer">SAÉ 1.03 - Installation d'un poste</h5>
 
@@ -177,7 +178,7 @@ Au cours de cette SAÉ nous devions en binôme réaliser l'installation sur mach
 
 Cette SAÉ avait pour but de mobiliser la compétence 3 et s'associait à la R1.04 (Intro Systèmes) et la R1.10 (Anglais)
 
-<img src="image.png">
+<img class="centrerImg" src="image.png">
 
 <h5 class="centrer">SAÉ 1.04 - Création d'une base de données</h5>
 
@@ -187,7 +188,7 @@ Nous devions fournir un schéma Entité/Association, un jeu de données, des scr
 
 Nous devions aussi évaluer le rendu d'un autre groupe.
 
-<img src="image-3.png">
+<img class="centrerImg" src="image-3.png">
 
 <h5 class="centrer">SAÉ 1.05 - Recueil de besoins</h5>
 
@@ -203,7 +204,7 @@ Cette SAÉ portait sur la compétence 5, la communication (R1.11) et le dévelop
 
 Voilà une capture d'écran du site. Malheureusement je n'ai plus le flyer.
 
-<img src="image-4.png" height="50%">
+<img class="centrerImg" src="image-4.png" height="50%">
 
 <br>
 
@@ -211,7 +212,7 @@ Voilà une capture d'écran du site. Malheureusement je n'ai plus le flyer.
 
 <br>
 
-<img src="image-5.png">
+<img class="centrerImg" src="image-5.png">
 
 <h5 class="centrer">SAÉ 1.06 - Controverse</h5>
 
@@ -221,7 +222,30 @@ Dans notre cas c'était sur les décisions en Ressources Humaines et l'impact de
 
 Nous devions réaliser un poster scientifique sur la controverse ainsi qu'un site web.
 
-<img src="image-6.png">
+<img class="centrerImg" src="image-6.png">
 
-<h4 class="centrer">Les résultats</h4>
+---
+
+<h4 class="centrer">Les résultats du semestre</h4>
+
+<img src="image-7.png">
+
+<img src="image-8.png">
+
+<img src="image-9.png">
+
+<img src="image-10.png">
+<img src="image-11.png">
+
+<img src="image-12.png">
+
+<img src="image-13.png">
+
+À la fin du semestre 1 je visais le parcours RACDV pour lequel les compétences majeures sont C1, C2 et C6.
+
+Au vu de mes résultats dans mes compétences je m'en sortais partout mais c'était pas non plus formidable. Je devais donc améliorer mes notes mais dans l'ensemble ça allait.
+
+---
+
+<h3 class="centrer">Deuxième Semestre</h3>
 
