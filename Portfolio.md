@@ -414,3 +414,45 @@ Voici le lien vers le [dépôt github](https://github.com/Jordi-R66/CodeGameJam2
 
 Nous avons caché un easter egg en l'honneur de M. Chollet, il faut trouver une certaine étoile rose et une musique se jouera, si vous n'arrivez pas à la jouer vous pouvez aller dans l'écran des crédits, la musique se déclenchera automatiquement (merci à Clément et Naïs pour avoir généré cette musique avec l'IA il y a un an).
 
+<h4 class="centrer">Résultats du semestre</h4>
+
+Mes résultats ont pris un sale coup à cause de ma dépression
+
+POO    : 6.20 de moyenne
+En IHM : 7.25 de moyenne sur les interros
+UE 1 et 2 : 6.20
+Compta : 7, 9 et 5
+
+PPP : 
+ - Lettre entretien : 17.25
+ - Questionnaire entretien : 13.50
+ - Analyse entretien : 0.00
+ - Synthèse Recherche Doc : 14
+ - Oral Final : 14
+
+Contrôle méthodes numériques : 7.5/20
+
+Exam d'anglais du 10 Juin : 17.50/20
+
+Au cours du deuxième semestre après avoir parlé avec des A2 et A3 je suis arrivé à la conclusion que finalement je ne partirai pas en RACDV mais en DACS parce que le dév web est sans doute le domaine du dév que je déteste le plus et en RACDV on bouffe énormément de web. Cette conclusion a l'avantage de me rapprocher de ce qui m'a fait entrer dans l'informatique : la cyberséc, mon premier Linux étant un Kali Linux installé en VM en 2017 et ensuite je m'amusais à faire des trucs de script kiddy (faut bien commencer quelque part).
+
+Même si je veux toujours faire du dév d'applis et logiciels, je préfère continuer en DACS parce que le web n'y a pas autant d'importance qu'en RACDV et puis je compenserai ce que je n'apprendrai pas grâce à l'apprentissage en autodidacte, comme je fais depuis 2018. J'aime aussi pas mal le C et le réseau (en informatique je suis assez touche à tout) donc le choix de partir en DACS a du sens.
+
+**MAIS**, ça c'est seulement si l'on accepte mon passage en deuxième année, mais au vu des notes de ce semestre, ça risque d'être compliqué.
+
+Rien que les notes sur les 2 premières UE (ou compétences, c'est la même chose) j'ai une moyenne retenue pour l'année d'environ 9. Mais honnêtement si je dois redoubler alors je redoublerai, ça me dérange pas de refaire une année.
+
+Mon classement par ordre de préférence tel que communiqué à l'IUT est le suivant
+
+1. DACS
+2. RACDV
+3. IAMSI
+
+Mais en réalité on serait plutôt sur
+
+1. DACS
+2. RACDV
+3. REDOUBLER
+4. IAMSI
+
+Et j'hésite à swap 2 et 3. Dans tous les cas, déso les IAMSI
