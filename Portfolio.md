@@ -315,5 +315,11 @@ Et voici la preuve que ça vient de lui
 
 <img class="centrerImg" src="image-16.png">
 
+Le Figma de l'appli
+
+<img class="centrerImg" src="image-17.png">
+
+---
+
 <h4 class="centrer">À côté des cours</h4>
 
