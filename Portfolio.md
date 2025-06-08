@@ -298,3 +298,22 @@ Cette SAÉ nous a fortement hypé (comme souvent quand c'est M. Chollet derrièr
 On devait faire une étude comptable du projet, choisir le lieu, planifier, faire des devis (seulement si ils sont automatisés, pour pas faire bosser des personnes pour rien), penser à la location du matériel, réfléchir au prix de vente des tickets.
 
 Notre évènement portait sur le spatial.
+
+<h5 class="centrer">SAÉ 2.06 - Application pour le Handi Sport</h5>
+
+Dans cette SAÉ de Communication Technique nous avons réalisé en équipe de 4 le design Figma et le parcours utilisateur d'une application pour promouvoir les Handi Sport.
+
+Pour parler de moi je laisse la parole à un des mes co-équipiers, enfin plutôt à l'appréciation qu'il a laissé (honnêtement vous pouvez skip ce pavé, mais merci Adrien pour ce long pavé de 2613 caractères).
+
+```txt
+Jordi a été un élément fort de notre groupe, sur ce projet. Il a été autonome sur la totalité de ses tâches, et a su répondre aux attentes. Le travail est de bonne qualité et répond aux consignes données. Il est structuré, bien rédigé et sans fautes majeures. Sur la phase de réflexion comme lors de tâches concrètes, Jordi a su donner un avis constructif et donner des idées d'une belle pertinence qui nous ont permis d'avancer sereinement en respectant à la fois nos délais et les consignes. Ensemble on a été capable d'identifier et de structurer le problème. Rassembler les informations nécessaires pour identifier les meilleures solutions applicables s'est donc avéré fluide avec lui. Il s'est montré proactif et volontaire pour aider les autres du groupe et apporter son expertise lorsqu'il le peut, en faisant preuve d'empathie et d'écoute active, et en étant volontaire pour expliquer et montrer comment faire, notamment sur la partie Figma. En effet, Jordi avait déjà une bonne connaissance du logiciel et nous a permis de rester efficace malgré le retard qu'on a pu prendre sur la deuxième phase du projet, à cause d'un manque de sessions de travail en groupe. Il était assigné comme moi sur le projet Figma et nous a permis de le fournir à temps pour la présentation. Cependant, une meilleure organisation des séances de travail sera appréciable pour la suite, car même si le retard a été rattrapé cette fois-ci, il se peut que ça lui porte préjudice pour la suite. Heureusement, il a été capable de formaliser la répartition des tâches dans le groupe et de l'adapter, avec nous, lorsque cela s'est montré nécessaire. Jordi a été un vecteur de bonne entente et de communication efficace durant notre travail, et ça nous a vraiment aidé. Il a fait preuve d'empathie vis-à-vis de domaine où nous étions moins bons, et de compréhension quant aux différents imprévus. Très calme, il a su réorganiser ses tâches et celles des autres pour faire avancer notre projet, plutôt que son travail personnel. L'échange avec lui a vraiment été plaisant et laisse entrevoir un point fort d'une grande force. 
+La présentation orale s'est également bien déroulée, et Jordi a su combattre son stress pour rester clair, et présenter sa partie et notre projet avec sa fiabilité habituelle. 
+Sa capacité à allier rigueur, écoute et sens de l’initiative a largement contribué à la réussite et à l'appréciation du projet. Il a rempli son rôle et a été un moteur constant pour le groupe. En somme, Jordi s’est imposé comme un coéquipier de grande valeur, aussi compétent qu’humain, et dont l’implication a été déterminante.
+```
+
+Et voici la preuve que ça vient de lui
+
+<img class="centrerImg" src="image-16.png">
+
+<h4 class="centrer">À côté des cours</h4>
+
