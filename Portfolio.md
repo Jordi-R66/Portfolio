@@ -440,7 +440,7 @@ Même si je veux toujours faire du dév d'applis et logiciels, je préfère cont
 
 **MAIS**, ça c'est seulement si l'on accepte mon passage en deuxième année, mais au vu des notes de ce semestre, ça risque d'être compliqué.
 
-Rien que les notes sur les 2 premières UE (ou compétences, c'est la même chose) j'ai une moyenne retenue pour l'année d'environ 9. Mais honnêtement si je dois redoubler alors je redoublerai, ça me dérange pas de refaire une année.
+Rien que les notes sur les 2 premières UE (ou compétences, c'est la même chose) j'ai une moyenne retenue pour l'année d'environ 9, même si comme je vise DACS au lieu de m'inquiéter de l'UE 2 je devrais m'inquiéter de la 3 et la 6. Mais honnêtement si je dois redoubler alors je redoublerai, ça me dérange pas de refaire une année.
 
 Mon classement par ordre de préférence tel que communiqué à l'IUT est le suivant
 
