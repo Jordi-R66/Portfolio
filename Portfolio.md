@@ -83,9 +83,9 @@
 
 <h2 class="centrer">Première Année</h2>
 
-<h3 class="centrer">Premier Semestre</h3>
-
 <p class="centrer" style="font-style: italic;">En raison d'un changement de PC et d'un premier portfolio peu rempli je n'ai plus certaines archives du premier semestre</p>
+
+<h3 class="centrer">Premier Semestre</h3>
 
 <h4 class="centrer">SAÉs</h4>
 
@@ -249,3 +249,52 @@ Au vu de mes résultats dans mes compétences je m'en sortais partout mais c'ét
 
 <h3 class="centrer">Deuxième Semestre</h3>
 
+<p class="centrer" style="font-style: italic">À la mi-février/début mars j'ai commencé une dépression/burnout, dès que je commençais à me pencher sur quoi que ce soit de lié aux cours je ne pouvais même plus mobiliser de connaissances</p>
+
+<h4 class="centrer">SAÉs</h4>
+
+<h5 class="centrer">SAÉ 2.01 - Pokémon TCG</h5>
+
+La SAÉ Pokémon, dans cette SAÉ nous devions en binôme recoder le jeu de cartes Pokémon en implémentant une partie des règles et toutes les mécaniques du jeu.
+
+L'interface graphique était fournie, il s'agissait d'un serveur web en local.
+
+La SAÉ concernait le développement objet. À cette SAÉ on s'est ramassé : une belle note de **0/20**. En raison pour ma part de la dépression/burnout mentionnée plus haut, et pour mon binôme ce dernier ne voulant pas poursuivre le BUT il faisait preuve de relâchement (conscient ou non, ce n'est pas à moi de le dire). Et je passais aussi plus de temps à corriger des conflits de merge qu'à coder.
+
+La deuxième phase de la SAÉ porte sur l'IHM, mais cette phase n'étant pas encore achevée il est difficile d'en dire quelque chose.
+
+<h5 class="centrer">SAÉ 2.02 - Graphes</h5>
+
+Elle porte sur une approche du Gymkhana sous forme de graphes
+
+Elle n'est pas encore finie donc je ne peux pas en dire plus
+
+<h5 class="centrer">SAÉ 2.03 - Installation de Services Réseau</h5>
+
+Cette SAÉ porte sur le réseau (R2.05), elle se faisait en 3 rendus dont le dernier comprend une partie en Anglais.
+
+Le premier rendu était la conception du réseau interne d'un espace de co-working, avec salle de réunion, open space, serveurs, administration/secrétariat, réseaux wifi et câblés. Nous devions donc réaliser un schéma de ce réseau, nous l'avons réalisé sur Filius et nous devions aussi penser à l'adressage IP, ce pour quoi mes cours de Terminale m'ont aidé afin de réaliser un adressage dimensionné pour être préparé à recevoir plus de machines dans le futur.
+
+<img class="centrerImg" src="image-14.png">
+
+Et voici un exemple d'adressage IP, ici pour la salle des serveurs
+
+<img class="centrerImg" src="image-15.png">
+
+Le deuxième rendu portait sur le choix de serveur de base de données, serveur web, serveur mail et d'un système de backup ainsi que de la recherche sur différents protocoles utilisés.
+
+Et le troisième et dernier rendu était l'installation d'un serveur de base de données, un serveur web, et de PHP + liaison du serveur Web avec PHP sur un serveur.
+
+Nous avions décidé d'utiliser un de mes VPS afin de pouvoir travailler ensemble sur l'installation.
+
+Nous avons mis une installation clean de Debian 12 sur le VPS, pour le serveur web on a choisi nginx, postgre pour la base de données et puis la dernière version dispo pour php sur apt pour debian 12, à savoir php 8.2.
+
+L'url pour accéder est `sae.jordi-rocafort.fr` pour les curieux. Et pour ceux qui seraient encore plus curieux tous les ports sont bloqués sauf 80 et mon port SSH custom protégé par clé privée. Le VPS sera réinitialisé début juillet.
+
+<h5 class="centrer">SAÉ 2.05 - Organisation d'évènement</h5>
+
+Cette SAÉ nous a fortement hypé (comme souvent quand c'est M. Chollet derrière), il fallait réfléchir à l'organisation d'un évènement fictif quelconque sur un thème de notre choix, ça pouvait être un congrés, une convention, ou peu importe.
+
+On devait faire une étude comptable du projet, choisir le lieu, planifier, faire des devis (seulement si ils sont automatisés, pour pas faire bosser des personnes pour rien), penser à la location du matériel, réfléchir au prix de vente des tickets.
+
+Notre évènement portait sur le spatial.
