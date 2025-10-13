@@ -1,8 +1,0 @@
-.centrer {
-	text-align: center;
-}
-
-img[alt*="center"] {
-	display: block;
-	margin: 0 auto;
-}
