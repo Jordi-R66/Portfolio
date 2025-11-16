@@ -1,13 +1,10 @@
 @import "variables.css";
 
-:root {
-	font-family: sans-serif;
-}
-
 .navmenu {
 	display: flex;
-	justify-content: center;
-	text-align: center;
+	flex-grow: 1;
+	justify-content: flex-end;
+	font-family: sans-serif;
 }
 
 .navmenu ul {

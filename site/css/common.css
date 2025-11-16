@@ -7,9 +7,31 @@ body {
 	color: var(--light-grey);
 }
 
+header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
 #header_div {
 	text-align: center;
-	margin-top: 10;
+	margin-top: 10px;
+	/*margin-bottom: 40px;*/
+
+	padding: 5px;
+}
+
+#profil_div {
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+#profil_div img {
+    width: 30px;
+    height: auto;
+    display: block;
 }
 
 #footer_div {

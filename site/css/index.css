@@ -1,0 +1,6 @@
+@import url("variables.css");
+
+div#main-section {
+	margin: auto;
+	width: fit-content;
+}
