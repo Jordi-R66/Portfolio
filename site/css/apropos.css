@@ -4,7 +4,30 @@
 	color: var(--light-grey);
 }
 
-a.cv-box, a.cv-box:visited, a.cv-box:hover, a.cv-box:active {
+a.cv-box {
 	color: var(--light-grey);
 	text-decoration: none;
+}
+
+div.main-section {
+	margin: auto;
+
+	width: fit-content;
+}
+
+div.cv-box {
+	width: fit-content;
+	height: fit-content;
+
+	background-color: var(--red);
+
+	padding: 5px;
+	padding-inline: 50px;
+
+	border-radius: 25px;
+}
+
+div.cv-box:hover {
+	background-color: var(--dark-blue);
+	font-weight: bold;
 }
