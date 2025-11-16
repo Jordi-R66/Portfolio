@@ -16,3 +16,7 @@ pwd
 tar -xJf portfolio_web.tar.xz site/
 mv site/* .
 rm -rf site/ *.tar.xz
+exit
+REMOTE
+
+rm *.tar.xz
