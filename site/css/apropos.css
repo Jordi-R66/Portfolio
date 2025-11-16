@@ -1,0 +1,10 @@
+@import url("variables.css");
+
+:root {
+	color: var(--light-grey);
+}
+
+a.cv-box, a.cv-box:visited, a.cv-box:hover, a.cv-box:active {
+	color: var(--light-grey);
+	text-decoration: none;
+}
