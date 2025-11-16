@@ -1,7 +1,9 @@
+@import url("variables.css");
+
 body {
 	font-family: sans-serif;
-	background-color: #333333;
-	color: #d2d2d2;
+	background-color: var(--dark-grey);
+	color: var(--light-grey);
 }
 
 #header_div {
@@ -12,43 +14,4 @@ body {
 #footer_div {
 	text-align: center;
 	margin-bottom: 10;
-}
-
-.navmenu {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-}
-
-.navmenu ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-}
-
-.navmenu li {
-	margin-right: 20px;
-	text-align: center;
-}
-
-.navmenu li:last-child {
-	margin-right: 0;
-}
-
-.navmenu a {
-	color: #d2d2d2;
-	text-decoration: none;
-	font-weight: bold;
-	text-align: center;
-	padding: 10px;
-}
-
-.navmenu a:hover {
-	transition: 0.5s;
-	color: #333333;
-	background-color: #d2d2d2;
-	border-radius: 10px;
-	font-size: large;
-	padding: 11.5px;
 }
