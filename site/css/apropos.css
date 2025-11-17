@@ -9,10 +9,9 @@ a.cv-box {
 	text-decoration: none;
 }
 
-div.main-section {
-	margin: auto;
-
-	width: fit-content;
+div.perso-box {
+	/*background-color: ;*/
+	width: 80%;
 }
 
 div.cv-box {
@@ -27,7 +26,9 @@ div.cv-box {
 	border-radius: 25px;
 }
 
-div.cv-box:hover {
+.cv-box:hover {
+	transition: 0.5s;
 	background-color: var(--dark-blue);
+	color: var(--red);
 	font-weight: bold;
 }
