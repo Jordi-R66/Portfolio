@@ -5,12 +5,25 @@ body {
 	font-family: sans-serif;
 	background-color: var(--dark-grey);
 	color: var(--light-grey);
+	height: 100%;
 }
 
 header {
 	display: flex;
 	align-items: center;
 	width: 100%;
+}
+
+div#main-section {
+	margin: auto;
+
+	width: fit-content;
+	height: 100%;
+}
+
+div#main-section div {
+	text-align: center;
+	margin: auto;
 }
 
 #header_div {
