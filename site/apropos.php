@@ -2,6 +2,7 @@
 <html>
 <head>
 	<?php require_once "backend/html/head.html"; ?>
+	<meta name="robots" content="noindex">
 	<link href="css/apropos.css" rel="stylesheet" type="text/css">
 
 	<title>Jordi Rocafort - À Propos</title>
