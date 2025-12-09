@@ -52,4 +52,4 @@ class Database {
 	}
 }
 
-Database::testConnexion();
+?>
