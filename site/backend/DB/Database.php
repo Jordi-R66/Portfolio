@@ -1,6 +1,6 @@
 <?php
 
-require_once "Credentials.php";
+require_once "DatabaseCredentials.php";
 
 class Database {
 	private static $instance = null;
@@ -8,11 +8,11 @@ class Database {
 
 	private $host = '10.8.0.1';
 	private $port = '5243';
-	private Credentials $creds;
+	private DatabaseCredentials $creds;
 
 	private function __construct() {
 		try {
-			$this->creds = Credentials::getInstance();
+			$this->creds = DatabaseCredentials::getInstance();
 			$db_name = $this->creds->getDatabase();
 
 			$this->pdo = new PDO(
@@ -41,14 +41,6 @@ class Database {
 
 	public static function getPDO() {
 		return self::getInstance()->pdo;
-	}
-
-	public static function testConnexion() {
-		try {
-			$pdo = self::getPDO();
-		} catch (PDOException $e) {
-			echo "Erreur de test : " . $e->getMessage();
-		}
 	}
 }
 

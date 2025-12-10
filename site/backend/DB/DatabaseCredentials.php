@@ -1,5 +1,5 @@
 <?php
-class Credentials {
+class DatabaseCredentials {
 	private static $instance = null;
 	private static $initialized = false;
 
@@ -46,7 +46,7 @@ class Credentials {
 
 	public static function getInstance() {
 		if (!self::$initialized) {
-			self::$instance = new Credentials();
+			self::$instance = new DatabaseCredentials();
 		}
 
 		return self::$instance;
