@@ -5,11 +5,119 @@ img.socials-icon {
 	height: auto;
 }
 
-ul, li {
+ul,
+li {
 	list-style-type: none;
 	text-decoration: none;
 }
 
 li.contact-links a {
 	margin: 5px;
+}
+
+#info-contact-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 25px;
+	width: 100%;
+}
+
+/* Conteneur principal des deux colonnes */
+#info-contact-content {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	/* force les colonnes à la même hauteur */
+	gap: 25px;
+	box-sizing: border-box;
+}
+
+/* Retirer le background appliqué à tous les divs enfants afin
+   d'appliquer des fonds plus ciblés sur la leftbox et le formulaire */
+
+#info-contact-leftbox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* centre verticalement le contenu */
+	align-items: center;
+	gap: 20px;
+	align-self: stretch; /* s'étire à la hauteur du formulaire */
+	min-width: 160px;
+	background-color: var(--dark-blue);
+	padding: 20px 16px;
+	border-radius: 8px;
+}
+
+/* Espacement interne pour que le contenu "respire" */
+#info-contact-leftbox .contact-links {
+	padding: 10px 0;
+}
+
+#info-contact-leftbox .contact-links li {
+	margin: 8px 0;
+}
+
+/* Style des liens dans la leftbox */
+#info-contact-leftbox a {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+/* Colonne droite : formulaire */
+#info-contact-formulaire {
+	/* Ne pas occuper tout l'espace horizontal : laisser la largeur au formulaire */
+	flex: 0 0 auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	align-self: stretch; /* même hauteur que la leftbox */
+	padding: 0;
+}
+
+#info-contact-formulaire form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	width: 320px;
+	max-width: 90vw; /* responsive */
+	background-color: var(--dark-blue);
+	padding: 20px;
+	border-radius: 8px;
+}
+
+#info-contact-formulaire label {
+	text-align: left;
+	font-weight: bold;
+}
+
+#info-contact-formulaire input,
+#info-contact-formulaire textarea,
+#info-contact-formulaire button {
+	width: 100%;
+	padding: 10px 12px;
+	font-size: 1rem;
+	border-radius: 5px;
+	border: none;
+	box-sizing: border-box;
+}
+
+#info-contact-formulaire button:hover {
+	background-color: var(--dark-grey);
+	color: var(--red);
+	font-style: bold;
+	transition: 0.5s;
+}
+
+#info-contact-formulaire textarea {
+	height: 120px;
+	resize: vertical;
+}
+
+#info-contact-formulaire button {
+	cursor: pointer;
+	font-weight: bold;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<?php require_once "backend/html/head.html"; ?>
 	<meta name="robots" content="noindex">
@@ -7,6 +8,7 @@
 
 	<title>Jordi Rocafort - Contact</title>
 </head>
+
 <body>
 	<?php require_once "backend/html/header.html"; ?>
 
@@ -16,25 +18,49 @@
 
 			<p>Suite à des abus commis sur mon adresse mail, j'ai décidé de la retirer du portfolio, merci de me contacter soit par LinkedIn/GitHub soit par le formulaire ci-dessous</p>
 
-			<div id="info-contact-leftbox">
-				<li class="contact-links">
-					<a class="liens-contact" href="https://linkedin.com/in/jordi-rocafort"><img class="socials-icon" src="img/linkedin_icon.svg" alt="LinkedIn">LinkedIn</a>
-					<a class="liens-contact" href="https://github.com/Jordi-R66/"><img class="socials-icon" src="img/github_icon.svg" alt="GitHub">GitHub</a>
-				</li>
+			<div id="info-contact-content">
+
+				<div id="info-contact-leftbox">
+					<ul class="contact-links">
+						<li>
+							<a class="liens-contact" href="https://linkedin.com/in/jordi-rocafort">
+								<img class="socials-icon" src="img/linkedin_icon.svg" alt="LinkedIn">LinkedIn
+							</a>
+						</li>
+						<li>
+							<a class="liens-contact" href="https://github.com/Jordi-R66/">
+								<img class="socials-icon" src="img/github_icon.svg" alt="GitHub">GitHub
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div id="info-contact-formulaire">
+					<form action="facadeMessager.php" method="POST">
+
+						<label for="objet">Objet</label>
+						<input id="objet" name="objet" type="text" required>
+
+						<label for="corps">Message</label>
+						<textarea id="corps" name="corps" required></textarea>
+
+						<label for="telephone">Téléphone</label>
+						<input id="telephone" name="telephone" type="tel"
+							pattern="\+?(\d{1,3})?[\s.-]?(?:\(?\d{1,4}\)?[\s.-]?)*\d{1,4}">
+
+						<label for="email">Email</label>
+						<input id="email" name="email" type="email">
+
+						<button type="submit">Envoyer</button>
+					</form>
+				</div>
+
 			</div>
 
-			<div id="info-contact-formulaire">
-				<form action="facadeMessager.php" method="POST">
-					<input id="objet" name="objet" type="text" required>
-					<input id="corps" name="corps" type="text" required>
-					<input id="telephone" name="telephone" type="tel" pattern="\+?(\d{1,3})?[\s.-]?(?:\(?\d{1,4}\)?[\s.-]?)*\d{1,4}">
-					<input id="email" name="email" type="email" pattern="(?:[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*|&quot;(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*&quot;)@(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-zA-Z0-9-]*[a-zA-Z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])">
-					<button type="submit">
-				</form>
-			</div>
 		</div>
 	</main>
 
 	<?php require_once "backend/html/footer.html"; ?>
 </body>
+
 </html>
