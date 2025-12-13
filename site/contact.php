@@ -18,6 +18,17 @@
 
 			<p>Suite à des abus commis sur mon adresse mail, j'ai décidé de la retirer du portfolio, merci de me contacter soit par LinkedIn/GitHub soit par le formulaire ci-dessous</p>
 
+			<?php
+				if (isset($_GET["statut"]) && ($_GET["statut"] === "0" || $_GET["statut"] === "1")) {
+					$sent = intval($_GET["statut"]) == 1;
+
+					$color = $sent == true ? "green" : "red";
+					$texte = $sent == true ? "Votre message a pu être envoyé !": "Votre message n'a pas pu être envoyé, veuillez réessayer plus tard";
+
+					echo "<h4 style=\"color: $color;\">$texte</h4>";
+				}
+			?>
+
 			<div id="info-contact-content">
 
 				<div id="info-contact-leftbox">

@@ -82,7 +82,7 @@ li.contact-links a {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
-	width: 320px;
+	width: 500px;
 	max-width: 90vw; /* responsive */
 	background-color: var(--dark-blue);
 	padding: 20px;
