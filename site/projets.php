@@ -68,6 +68,8 @@
 				<p>Dans le cadre de la SAÉ du troisème semestre de mon BUT Informatique, j'ai participé au développement d'un système d'enchères sécurisées à plis fermés (Lors des enchères personne ne connaît les prix que les acheteurs proposent, et sont révélés à la fin de la phase d'enchère). Pour être plus précis, il s'agit des enchères de Vickrey, une forme d'enchères reposant sur la théorie des jeux. Dans ce modèle, celui qui a proposé le plus haut prix remporte l'enchère mais ne paye que le deuxième plus haut prix.</p>
 
 				<p>Au cours de ce projet je me suis principalement chargé de l'élaboration de la communication entre le logiciel utilisateur et la partie serveur. J'ai écrit tout le code nécessaire à communication entre les utilisateurs et le serveur et assuré le chiffrement en utilisant SSL/TLS via un certificat auto-signé, et l'emploi de RSA 4096. L'interface graphique ainsi que la logique de la gestion des enchères ont été réalisées par les autres membres de l'équipe.</p>
+
+				<p>J'aimerais saluer <a class="lien inclusion_texte" href="https://flothival.github.io/Florent_LABROUSSE-LHUISSIER/">Florent</a> et <a class="lien inclusion_texte" href="">Rayane</a> pour leur investissement dans cette SAÉ.</p>
 			</div>
 		</div>
 		<hr>
