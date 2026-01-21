@@ -36,7 +36,7 @@
 					À la fin de la Terminale, en 2024, j'ai donc commencé à travailler sur ce projet. Je me base sur les lois de Kepler pour ensuite déterminer l'emplacement de n'importe quel satellite (y compris l'ISS ou le télescope Hubble) en fonction de l'heure et de ses paramètres orbitaux (TLE).
 				</p>
 				<p>
-					Le programme principal (le backend) est codé en C, c'est lui qui effectue les calculs mathématiques et gère les données. L'interface graphique et le téléchargement des TLE sont gérés par un script Python (le frontend).
+					Le programme principal (le backend) est codé en C, c'est lui qui effectue les calculs mathématiques et gère les données. Le téléchargement des TLE est lui géré par un script Python. Un prototype du programme a été réalisé en Python.
 				</p>
 
 				<a href="https://github.com/Jordi-R66/TLE-Decoder" target="_blank" class="btn-repo">
