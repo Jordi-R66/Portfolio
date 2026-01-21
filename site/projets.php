@@ -55,6 +55,7 @@
 
 					<div class="techno-badges">
 						<span class="badge java">Java</span>
+						<span class="badge tool">Maven</span>
 						<span class="badge tool">SSL/TLS</span>
 						<span class="badge tool">Réseau</span>
 					</div>
@@ -81,7 +82,7 @@
 		</div>
 
 		<div class="projet" id="symphony-stars">
-			<img class="illus-projet" src="img/CodeGameJam2.gif" alt="Gameplay de Symphony of Stars">
+			<img class="illus-projet" src="img/CodeGameJam2.gif" alt="Gameplay de Symphony of Stars par Romain">
 
 			<div class="description-projet">
 				<h2>The Symphony Of Stars</h2>

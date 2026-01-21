@@ -16,7 +16,7 @@
 		<div id="info-contact-box">
 			<h3>Comment me contacter</h3>
 
-			<p>Suite à des abus commis sur mon adresse mail, j'ai décidé de la retirer du portfolio, merci de me contacter soit par LinkedIn/GitHub soit par le formulaire ci-dessous</p>
+			<p>Suite à des abus commis sur mon adresse mail, j'ai décidé de la retirer du portfolio, merci de me contacter soit par LinkedIn/GitHub soit par le formulaire ci-dessous.</p>
 
 			<?php
 			if (isset($_GET["statut"]) && ($_GET["statut"] === "0" || $_GET["statut"] === "1")) {

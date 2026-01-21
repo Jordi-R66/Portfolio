@@ -68,7 +68,7 @@ div.cv-box {
 }
 
 .perso-box p {
-	text-align: justify;
+	/*text-align: justify;*/
 	line-height: 1.6;
 	margin-bottom: 15px;
 }
@@ -116,12 +116,14 @@ ul.timeline-list li {
 }
 
 ul.timeline-list li::before {
+	left: -12px;
+	width: 16px;
+	/* j'avais pas envie de calculer 3/4 de 15px */
+	height: 16px;
+	/* pour que ça soit rond */
 	content: '';
 	position: absolute;
-	left: -9px;
 	top: 5px;
-	width: 15px;
-	height: 15px;
 	background-color: var(--dark-blue);
 	border: 3px solid var(--red);
 	border-radius: 50%;
@@ -159,26 +161,30 @@ ul.timeline-list .date {
 	transform: translateY(-5px);
 }
 
-.citation-text {
+.perso-box .citation-text {
 	font-style: italic;
 	font-size: 1.1em;
 	color: white;
 	margin-bottom: 10px;
+	text-align: left;
+	/* Maintenant ça va marcher */
 }
 
-.citation-author {
+.perso-box .citation-author {
 	font-weight: bold;
 	color: var(--red);
 	margin-bottom: 5px;
 	text-align: right;
 }
 
-.citation-desc {
+.perso-box .citation-desc {
 	font-size: 0.9em;
 	color: var(--light-grey);
 	border-top: 1px solid #555;
 	padding-top: 10px;
 	margin-top: 10px;
+	text-align: left;
+	/* Idem ici */
 }
 
 .skills-container {
