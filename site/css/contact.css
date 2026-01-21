@@ -62,17 +62,62 @@ li.contact-links a:hover img.socials-icon {
 /* Conteneur principal des deux colonnes */
 #info-contact-content {
 	display: flex;
+	flex-direction: row;
+	/* Par défaut : ligne */
 	justify-content: center;
 	align-items: stretch;
-	/* Même hauteur pour les deux blocs */
 	gap: 30px;
-	flex-wrap: wrap;
-	/* Passe en colonne sur mobile */
 	max-width: 1000px;
 	width: 90%;
 }
 
-/* --- COLONNE GAUCHE (LIENS) --- */
+/* --- GESTION DU RESPONSIVE (Tablettes & Mobile) --- */
+@media screen and (max-width: 950px) {
+
+	#info-contact-content {
+		flex-direction: column;
+		/* Empilement vertical */
+		align-items: center;
+		/* Centre les enfants horizontalement */
+		width: 90%;
+		/* Largeur du conteneur */
+		margin: 0 auto;
+		/* Centre le conteneur lui-même */
+	}
+
+	#info-contact-leftbox,
+	#info-contact-formulaire {
+		/* Dimensions robustes */
+		width: 100%;
+		max-width: 600px;
+		box-sizing: border-box;
+		/* IMPORTANT: Inclut le padding dans la largeur */
+
+		/* Réinitialisation Flex */
+		min-width: 0;
+		flex: none;
+
+		/* Centrage absolu */
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* ORDRE ET ESPACEMENT */
+
+	#info-contact-leftbox {
+		order: 1;
+		/* En haut */
+		margin-bottom: 30px;
+	}
+
+	#info-contact-formulaire {
+		order: 2;
+		/* En bas */
+		margin-bottom: 0;
+	}
+}
+
+/* --- COLONNE GAUCHE (CARTE PROFIL) --- */
 
 #info-contact-leftbox {
 	display: flex;
@@ -80,16 +125,93 @@ li.contact-links a:hover img.socials-icon {
 	justify-content: center;
 	align-items: center;
 	flex: 1;
-	min-width: 250px;
+	/* Prend 1 part de l'espace */
+	min-width: 300px;
+	/* S'assure qu'elle ne soit pas trop écrasée */
 	background-color: var(--dark-blue);
 	padding: 40px;
 	border-radius: 15px;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+	text-align: center;
 }
 
-#info-contact-leftbox .contact-links li {
-	margin: 15px 0;
+#info-contact-leftbox h3 {
+	color: var(--red);
+	font-size: 1.8rem;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+#info-contact-leftbox p {
+	color: var(--light-grey);
+	margin-bottom: 30px;
+	font-size: 1rem;
+	line-height: 1.5;
+	max-width: 80%;
+	/* Pour éviter que le texte touche les bords */
+}
+
+/* --- BOUTONS SOCIAUX --- */
+
+.contact-links {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.social-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	padding: 12px 20px;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.1rem;
+	color: white;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	width: 100%;
+	/* Boutons pleine largeur */
+	box-sizing: border-box;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-btn img.socials-icon {
+	width: 30px;
+	height: 30px;
+	filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* Couleurs spécifiques */
+.social-btn.linkedin {
+	background-color: #0077b5;
+	/* Bleu officiel LinkedIn */
+}
+
+.social-btn.github {
+	background-color: #24292e;
+	/* Noir officiel GitHub */
+}
+
+/* Effets au survol */
+.social-btn:hover {
+	transform: translateY(-3px);
+	/* Légère remontée */
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+	filter: brightness(1.1);
+	/* Éclaircit légèrement */
+}
+
+/* Adaptation Mobile : Si l'écran est petit, on réduit un peu le padding */
+@media (max-width: 768px) {
+	#info-contact-leftbox {
+		padding: 30px 20px;
+		min-width: auto;
+		/* Laisse le navigateur gérer la largeur */
+		width: 100%;
+	}
 }
 
 /* --- COLONNE DROITE (FORMULAIRE) --- */

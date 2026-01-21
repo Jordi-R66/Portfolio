@@ -19,28 +19,33 @@
 			<p>Suite à des abus commis sur mon adresse mail, j'ai décidé de la retirer du portfolio, merci de me contacter soit par LinkedIn/GitHub soit par le formulaire ci-dessous</p>
 
 			<?php
-				if (isset($_GET["statut"]) && ($_GET["statut"] === "0" || $_GET["statut"] === "1")) {
-					$sent = intval($_GET["statut"]) == 1;
+			if (isset($_GET["statut"]) && ($_GET["statut"] === "0" || $_GET["statut"] === "1")) {
+				$sent = intval($_GET["statut"]) == 1;
 
-					$color = $sent == true ? "green" : "red";
-					$texte = $sent == true ? "Votre message a pu être envoyé !": "Votre message n'a pas pu être envoyé, veuillez réessayer plus tard";
+				$color = $sent == true ? "green" : "red";
+				$texte = $sent == true ? "Votre message a pu être envoyé !" : "Votre message n'a pas pu être envoyé, veuillez réessayer plus tard";
 
-					echo "<h4 style=\"color: $color;\">$texte</h4>";
-				}
+				echo "<h4 style=\"color: $color;\">$texte</h4>";
+			}
 			?>
 
 			<div id="info-contact-content">
 
 				<div id="info-contact-leftbox">
+					<h3>Retrouvez-moi</h3>
+					<p>Envie d'en savoir plus sur mon parcours ou de voir mes codes sources ? Connectons-nous !</p>
+
 					<ul class="contact-links">
 						<li>
-							<a class="liens-contact" href="https://linkedin.com/in/jordi-rocafort" target="_blank" rel="noopener noreferrer">
-								<img class="socials-icon" src="img/linkedin_icon.svg" alt="LinkedIn">LinkedIn
+							<a class="social-btn linkedin" href="https://linkedin.com/in/jordi-rocafort" target="_blank">
+								<img class="socials-icon" src="img/linkedin_icon.svg" alt="LinkedIn Logo">
+								<span>LinkedIn</span>
 							</a>
 						</li>
 						<li>
-							<a class="liens-contact" href="https://github.com/Jordi-R66/" target="_blank" rel="noopener noreferrer">
-								<img class="socials-icon" src="img/github_icon.svg" alt="GitHub">GitHub
+							<a class="social-btn github" href="https://github.com/Jordi-R66/" target="_blank">
+								<img class="socials-icon" src="img/github_icon.svg" alt="GitHub Logo">
+								<span>GitHub</span>
 							</a>
 						</li>
 					</ul>
