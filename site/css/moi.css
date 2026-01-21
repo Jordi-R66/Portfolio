@@ -54,3 +54,151 @@ div.cv-box {
 .perso-box strong {
 	color: white;
 }
+
+/* Style pour la Timeline */
+ul.timeline-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    border-left: 3px solid var(--red); /* Ligne verticale rouge */
+    margin-left: 10px;
+}
+
+ul.timeline-list li {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Le petit point sur la ligne */
+ul.timeline-list li::before {
+    content: '';
+    position: absolute;
+    left: -9px; /* Ajuster pour centrer sur la ligne */
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--dark-blue);
+    border: 3px solid var(--red);
+    border-radius: 50%;
+}
+
+ul.timeline-list .date {
+    display: block;
+    font-weight: bold;
+    color: var(--red);
+    font-size: 1.1em;
+}
+
+/* Conteneur des citations */
+.citations-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* Carte individuelle */
+.citation-card {
+    background-color: var(--dark-blue); /* Fond sombre cohérent */
+    border-left: 4px solid var(--red);  /* Touche de couleur rouge */
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px; /* Responsive */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.citation-card:hover {
+    transform: translateY(-5px); /* Petit effet au survol */
+}
+
+/* Texte de la citation */
+.citation-text {
+    font-style: italic;
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Auteur */
+.citation-author {
+    font-weight: bold;
+    color: var(--red);
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+/* Petite description explicative (optionnel mais classe) */
+.citation-desc {
+    font-size: 0.9em;
+    color: var(--light-grey);
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.skill-category {
+    flex: 1;
+    min-width: 280px;
+    background-color: var(--dark-blue);
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 3px solid var(--light-grey); /* Ligne discrète au dessus */
+}
+
+/* Titre de catégorie (ex: Cœur de métier) */
+.skill-category h3 {
+    color: var(--red);
+    margin-top: 0;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Conteneur des badges */
+.skill-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+/* Style général du badge */
+.badge {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #444; /* Couleur par défaut */
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Couleurs spécifiques (Optionnel - pour donner du peps) */
+.badge.c-lang { background-color: #5c6bc0; } /* Bleu C */
+.badge.java-lang { background-color: #e57373; } /* Rouge Java */
+.badge.python-lang { background-color: #ffca28; color: #333; } /* Jaune Python */
+.badge.system { background-color: #4caf50; } /* Vert Système */
+.badge.db { background-color: #29b6f6; } /* Bleu DB */
+
+/* Description sous les badges */
+.skill-desc {
+    font-size: 0.85rem;
+    color: var(--light-grey);
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+}
