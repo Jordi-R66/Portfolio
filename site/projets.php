@@ -99,7 +99,7 @@
 			<div class="description-projet">
 				<p>Ce projet est né d'une volonté de comprendre ce qui se cache derrière les abstractions des langages de haut niveau (comme Python ou Java). L'objectif est de recréer "from scratch" une bibliothèque standard C modulaire, portable et performante.</p>
 
-				<p>J'ai implémenté des structures de données génériques (Listes chaînées, Dictionnaires/HashMaps, Piles, Files) en utilisant des pointeurs génériques (`void*`) et une gestion rigoureuse de l'allocation dynamique pour éviter les fuites de mémoire. L'architecture du projet est pensée pour être modulaire : l'utilisateur peut inclure uniquement les headers nécessaires (comme indiqué dans mon README) ou lier la bibliothèque compilée.</p>
+				<p>J'ai implémenté des structures de données génériques (Listes chaînées, Dictionnaires/HashMaps, Piles, Files) en utilisant des pointeurs génériques (<code>void*</code>) et une gestion rigoureuse de l'allocation dynamique pour éviter les fuites de mémoire. L'architecture du projet est pensée pour être modulaire : l'utilisateur peut inclure uniquement les headers nécessaires (comme indiqué dans mon README) ou lier la bibliothèque compilée.</p>
 
 				<p>La partie la plus technique concerne le module <strong>VariableSizeInt</strong> (BigInt) dont je ne suis pas totalement satisfait. Pour manipuler des entiers de taille arbitraire (utiles en cryptographie), j'ai dû implémenter des algorithmes arithmétiques avancés comme la <strong>multiplication de Karatsuba</strong> (pour une complexité inférieure à O(n²)) ou l'algorithme d'Euclide étendu pour l'arithmétique modulaire. J'ai également développé un module de calcul matriciel incluant le pivot de Gauss.</p>
 
