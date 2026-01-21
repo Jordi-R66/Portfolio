@@ -1,29 +1,27 @@
 @import url("variables.css");
 @import url("nav.css");
 
+/* --- RESET & BASES --- */
+body,
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+	/* Empêche le scroll horizontal accidentel */
+}
+
 body {
 	font-family: sans-serif;
 	background-color: var(--dark-grey);
 	color: var(--light-grey);
-}
-
-html, body {
-	min-height: 100vh;
-	margin: 0;
-}
-
-body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	/* Permet au footer de rester en bas si la page est vide */
 }
 
-header, footer {
-	display: flex;
-	align-items: center;
-	width: 100%;
-}
-
+/* --- LIENS GLOBAUX --- */
 a {
 	color: white;
 	text-decoration: none;
@@ -40,29 +38,37 @@ a.lien:hover {
 	color: var(--red);
 }
 
+/* --- LAYOUT PRINCIPAL --- */
 main {
-	margin: auto;
+	margin: 0 auto;
+	/* Centrage horizontal propre */
 	flex: 1 0 auto;
-
-	width: fit-content;
-	/*height: 100%;*/
+	/* Pousse le footer vers le bas */
+	width: 100%;
+	max-width: 1200px;
+	/* Limite la largeur du contenu principal */
+	display: flex;
+	flex-direction: column;
+	/* Suppression du width: fit-content qui casse le centrage sur certains navigateurs */
 }
 
-main div {
-	text-align: center;
-	margin: auto;
+/* --- HEADER & FOOTER (Nettoyage) --- */
+
+/* On ne touche plus au HEADER ici, c'est nav.css qui gère tout. */
+/* Seul le footer garde son comportement flex centré */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 20px 0;
+	flex-shrink: 0;
 }
 
-#header_div {
-	margin-top: 10px;
-}
+/* Suppression complète des règles #header_div qui créaient l'offset et les marges blanches */
 
 #footer_div {
-	flex-shrink: 0;
 	margin-top: 20px;
-}
-
-#header_div, #footer_div {
 	text-align: center;
 	padding: 5px;
 }
@@ -73,12 +79,6 @@ main div {
 	display: flex;
 	align-items: center;
 	gap: 8px;
-}
-
-footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 #encart_div img {

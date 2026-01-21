@@ -1,35 +1,26 @@
-<div id="header_div">
-	<header>
-		<div id="encart_div">
-			<img src="img/favicon.svg">
-			<p>Jordi Rocafort</p>
+<header>
+	<nav class="navbar">
+		<div class="brand">
+			<a href="index.php">
+				<img src="img/favicon.svg" alt="Logo" class="nav-logo">
+				<span class="brand-text">Jordi <span class="highlight">Rocafort</span></span>
+			</a>
 		</div>
 
-		<nav class="navmenu">
-			<ul class="navmenu_ul">
-				<li class="navmenu_li">
-					<a href="index.php" class="Accueil_link">
-						Accueil
-					</a>
-				</li>
-				<li class="navmenu_li">
-					<a href="projets.php" class="Projets_link">
-						Projets
-					</a>
-				</li>
-				<li class="navmenu_li">
-					<a href="moi.php" class="Apropos_link">
-						Moi
-					</a>
-				</li>
-				<li class="navmenu_li">
-					<a href="contact.php" class="Contact_link">
-						Contact
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+		<input type="checkbox" id="menu-toggle">
+		<label for="menu-toggle" class="burger-icon">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
 
-	<hr>
-</div>
+		<ul class="nav-links">
+			<li><a href="index.php">Accueil</a></li>
+			<li><a href="projets.php">Projets</a></li>
+			<li><a href="moi.php">À Propos</a></li>
+			<li class="last-item"><a href="contact.php">Contact</a></li>
+		</ul>
+	</nav>
+
+	<hr class="header-separator">
+</header>
