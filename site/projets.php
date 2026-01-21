@@ -69,7 +69,7 @@
 
 				<p>Au cours de ce projet je me suis principalement chargé de l'élaboration de la communication entre le logiciel utilisateur et la partie serveur. J'ai écrit tout le code nécessaire à communication entre les utilisateurs et le serveur et assuré le chiffrement en utilisant SSL/TLS via un certificat auto-signé, et l'emploi de RSA 4096. L'interface graphique ainsi que la logique de la gestion des enchères ont été réalisées par les autres membres de l'équipe.</p>
 
-				<p>J'aimerais saluer <a class="lien inclusion_texte" href="https://flothival.github.io/Florent_LABROUSSE-LHUISSIER/"target="_blank" rel="noopener noreferrer">Florent</a> et <a class="lien inclusion_texte" href=""target="_blank" rel="noopener noreferrer">Rayane</a> pour leur investissement dans cette SAÉ.</p>
+				<p>J'aimerais saluer <a class="lien inclusion_texte" href="https://flothival.github.io/Florent_LABROUSSE-LHUISSIER/" target="_blank" rel="noopener noreferrer">Florent</a> et <a class="lien inclusion_texte" href="" target="_blank" rel="noopener noreferrer">Rayane</a> pour leur investissement dans cette SAÉ.</p>
 			</div>
 		</div>
 		<hr>
@@ -80,14 +80,33 @@
 				<hr>
 				<table class="langages-projet">
 					<tr>
-						<th>Technologie</th>
+						<th>Langage</th>
 						<th>Utilisation</th>
 					</tr>
 					<tr>
 						<td>C</td>
-						<td>Entièreté</td>
+						<td>Implémentation des structures et algorithmes</td>
+					</tr>
+					<tr>
+						<td>Make/GCC</td>
+						<td>Compilation et linkage statique</td>
 					</tr>
 				</table>
+			</div>
+
+			<img class="illus-projet" src="img/screen_myownclib.png" alt="Capture d'écran du code source montrant la structure des BigInt">
+
+			<div class="description-projet">
+				<p>Ce projet est né d'une volonté de comprendre ce qui se cache derrière les abstractions des langages de haut niveau (comme Python ou Java). L'objectif est de recréer "from scratch" une bibliothèque standard C modulaire, portable et performante.</p>
+
+				<p>J'ai implémenté des structures de données génériques (Listes chaînées, Dictionnaires/HashMaps, Piles, Files) en utilisant des pointeurs génériques (`void*`) et une gestion rigoureuse de l'allocation dynamique pour éviter les fuites de mémoire. L'architecture du projet est pensée pour être modulaire : l'utilisateur peut inclure uniquement les headers nécessaires (comme indiqué dans mon README) ou lier la bibliothèque compilée.</p>
+
+				<p>La partie la plus technique concerne le module <strong>VariableSizeInt</strong> (BigInt) dont je ne suis pas totalement satisfait. Pour manipuler des entiers de taille arbitraire (utiles en cryptographie), j'ai dû implémenter des algorithmes arithmétiques avancés comme la <strong>multiplication de Karatsuba</strong> (pour une complexité inférieure à O(n²)) ou l'algorithme d'Euclide étendu pour l'arithmétique modulaire. J'ai également développé un module de calcul matriciel incluant le pivot de Gauss.</p>
+
+				<p><strong>Compétences mobilisées :</strong>
+					<br>• <em>Optimiser :</em> Choix de structures de données adaptées et implémentation d'algorithmes complexes (Karatsuba).
+					<br>• <em>Réaliser :</em> Conception d'une architecture modulaire et documentation technique.
+				</p>
 			</div>
 		</div>
 		<hr>
