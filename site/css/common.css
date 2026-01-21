@@ -52,37 +52,137 @@ main {
 	/* Suppression du width: fit-content qui casse le centrage sur certains navigateurs */
 }
 
-/* --- HEADER & FOOTER (Nettoyage) --- */
-
-/* On ne touche plus au HEADER ici, c'est nav.css qui gère tout. */
-/* Seul le footer garde son comportement flex centré */
-footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+/* --- FOOTER ÉPURÉ --- */
+.site-footer {
+	background-color: var(--dark-blue);
+	color: var(--light-grey);
+	padding-top: 40px;
+	margin-top: auto;
 	width: 100%;
-	padding: 20px 0;
-	flex-shrink: 0;
-}
-
-/* Suppression complète des règles #header_div qui créaient l'offset et les marges blanches */
-
-#footer_div {
-	margin-top: 20px;
-	text-align: center;
-	padding: 5px;
-}
-
-#encart_div {
-	margin-left: 15px;
-	margin-right: 15px;
-	display: flex;
-	align-items: center;
-	gap: 8px;
-}
-
-#encart_div img {
-	width: 30px;
-	height: auto;
+	border-top: 4px solid var(--red);
 	display: block;
+}
+
+.footer-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/* Pousse les éléments aux extrémités */
+	align-items: center;
+	/* Centre verticalement les blocs */
+	padding: 0 40px 40px 40px;
+	gap: 40px;
+}
+
+/* Colonne Gauche : Marque */
+.footer-brand {
+	flex: 1;
+	min-width: 280px;
+}
+
+.footer-brand .brand-name {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.footer-brand .highlight {
+	color: var(--red);
+}
+
+.footer-brand .role {
+	font-weight: bold;
+	color: white;
+	margin-bottom: 5px;
+}
+
+.footer-brand .desc {
+	font-size: 0.95rem;
+	line-height: 1.5;
+	max-width: 400px;
+	/* Un peu plus large maintenant qu'il y a de la place */
+	margin: 0;
+}
+
+/* Colonne Droite : Social & CV */
+.footer-social {
+	flex: 1;
+	min-width: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	/* C'est ICI que ça change : on aligne tout à droite */
+	justify-content: center;
+}
+
+.social-icons {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 15px;
+}
+
+.social-icons a img {
+	width: 32px;
+	height: 32px;
+	transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+	transform: scale(1.1);
+}
+
+.btn-footer-cv {
+	padding: 8px 20px;
+	border: 1px solid var(--light-grey);
+	border-radius: 5px;
+	font-size: 0.9rem;
+	text-decoration: none;
+	color: var(--light-grey);
+	transition: 0.3s;
+}
+
+.btn-footer-cv:hover {
+	background-color: var(--red);
+	border-color: var(--red);
+	color: white;
+}
+
+/* Barre de Copyright */
+.footer-bottom {
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 15px 20px;
+	text-align: center;
+	font-size: 0.85rem;
+}
+
+.footer-bottom p {
+	margin: 5px 0;
+}
+
+.tech-stack {
+	font-size: 0.75rem;
+	opacity: 0.6;
+}
+
+/* RESPONSIVE : Mobile */
+@media (max-width: 768px) {
+	.footer-content {
+		flex-direction: column;
+		padding: 0 20px 30px 20px;
+		text-align: center;
+	}
+
+	.footer-brand .desc {
+		margin: 0 auto 20px auto;
+	}
+
+	.footer-social {
+		align-items: center;
+		/* Sur mobile, on remet tout au centre */
+		width: 100%;
+	}
 }
