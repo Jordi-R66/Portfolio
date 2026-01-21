@@ -125,7 +125,7 @@
 
 				<p>J'ai aussi aidé à réaliser le code de déplacement du vaisseau sur et autour de ses axes. En effet, le vaisseau peut translater et pivoter sur ses 3 axes : X, Y et Z.</p>
 
-				<p>Je tiens à remercier <a class="lien inclusion_texte" href="https://bastienluben.dev/"target="_blank" rel="noopener noreferrer">Bastien</a>, <a class="lien inclusion_texte" href="https://rybois-dev.github.io/portfolio/src/index.html"target="_blank" rel="noopener noreferrer">Clément</a> et <a class="lien inclusion_texte" href="https://dellarolir.github.io/Romain_Dellaroli.github.io/"target="_blank" rel="noopener noreferrer">Romain</a> pour leur participation à la CGJ 2025, en particulier pour la passion investie pendant cette trentaine d'heures.</p>
+				<p>Je tiens à remercier <a class="lien inclusion_texte" href="https://bastienluben.dev/" target="_blank" rel="noopener noreferrer">Bastien</a>, <a class="lien inclusion_texte" href="https://rybois-dev.github.io/portfolio/src/index.html" target="_blank" rel="noopener noreferrer">Clément</a> et <a class="lien inclusion_texte" href="https://dellarolir.github.io/Romain_Dellaroli.github.io/" target="_blank" rel="noopener noreferrer">Romain</a> pour leur participation à la CGJ 2025, en particulier pour la passion investie pendant cette trentaine d'heures.</p>
 			</div>
 		</div>
 	</main>
