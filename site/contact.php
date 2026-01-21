@@ -34,12 +34,12 @@
 				<div id="info-contact-leftbox">
 					<ul class="contact-links">
 						<li>
-							<a class="liens-contact" href="https://linkedin.com/in/jordi-rocafort">
+							<a class="liens-contact" href="https://linkedin.com/in/jordi-rocafort" target="_blank" rel="noopener noreferrer">
 								<img class="socials-icon" src="img/linkedin_icon.svg" alt="LinkedIn">LinkedIn
 							</a>
 						</li>
 						<li>
-							<a class="liens-contact" href="https://github.com/Jordi-R66/">
+							<a class="liens-contact" href="https://github.com/Jordi-R66/" target="_blank" rel="noopener noreferrer">
 								<img class="socials-icon" src="img/github_icon.svg" alt="GitHub">GitHub
 							</a>
 						</li>

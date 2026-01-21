@@ -69,7 +69,7 @@
 
 				<p>Au cours de ce projet je me suis principalement chargé de l'élaboration de la communication entre le logiciel utilisateur et la partie serveur. J'ai écrit tout le code nécessaire à communication entre les utilisateurs et le serveur et assuré le chiffrement en utilisant SSL/TLS via un certificat auto-signé, et l'emploi de RSA 4096. L'interface graphique ainsi que la logique de la gestion des enchères ont été réalisées par les autres membres de l'équipe.</p>
 
-				<p>J'aimerais saluer <a class="lien inclusion_texte" href="https://flothival.github.io/Florent_LABROUSSE-LHUISSIER/">Florent</a> et <a class="lien inclusion_texte" href="">Rayane</a> pour leur investissement dans cette SAÉ.</p>
+				<p>J'aimerais saluer <a class="lien inclusion_texte" href="https://flothival.github.io/Florent_LABROUSSE-LHUISSIER/"target="_blank" rel="noopener noreferrer">Florent</a> et <a class="lien inclusion_texte" href=""target="_blank" rel="noopener noreferrer">Rayane</a> pour leur investissement dans cette SAÉ.</p>
 			</div>
 		</div>
 		<hr>
@@ -125,7 +125,7 @@
 
 				<p>J'ai aussi aidé à réaliser le code de déplacement du vaisseau sur et autour de ses axes. En effet, le vaisseau peut translater et pivoter sur ses 3 axes : X, Y et Z.</p>
 
-				<p>Je tiens à remercier <a class="lien inclusion_texte" href="https://bastienluben.dev/">Bastien</a>, <a class="lien inclusion_texte" href="https://rybois-dev.github.io/portfolio/src/index.html">Clément</a> et <a class="lien inclusion_texte" href="https://dellarolir.github.io/Romain_Dellaroli.github.io/">Romain</a> pour leur participation à la CGJ 2025, en particulier pour la passion investie pendant cette trentaine d'heures.</p>
+				<p>Je tiens à remercier <a class="lien inclusion_texte" href="https://bastienluben.dev/"target="_blank" rel="noopener noreferrer">Bastien</a>, <a class="lien inclusion_texte" href="https://rybois-dev.github.io/portfolio/src/index.html"target="_blank" rel="noopener noreferrer">Clément</a> et <a class="lien inclusion_texte" href="https://dellarolir.github.io/Romain_Dellaroli.github.io/"target="_blank" rel="noopener noreferrer">Romain</a> pour leur participation à la CGJ 2025, en particulier pour la passion investie pendant cette trentaine d'heures.</p>
 			</div>
 		</div>
 	</main>
