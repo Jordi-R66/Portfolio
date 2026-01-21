@@ -94,7 +94,7 @@
 				</table>
 			</div>
 
-			<img class="illus-projet" src="img/screen_myownclib.png" alt="Capture d'écran du code source montrant la structure des BigInt">
+			<img class="illus-projet" src="img/screen-myownclib.png" alt="Capture d'écran du code source montrant la structure des BigInt">
 
 			<div class="description-projet">
 				<p>Ce projet est né d'une volonté de comprendre ce qui se cache derrière les abstractions des langages de haut niveau (comme Python ou Java). L'objectif est de recréer "from scratch" une bibliothèque standard C modulaire, portable et performante.</p>
