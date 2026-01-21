@@ -95,11 +95,21 @@
 				</div>
 
 				<p>
-					En effet, libGDX ne gère pas nativement la 3D, il s'agit d'une librairie sommaire directement basée sur LWJGL (lib derrière minecraft). Cela veut dire que les seules coordonnées que la lib connaisse sont les coordonnées X, Y des pixels dans sa fenêtre.
+					En Janvier 2025, je faisais partie d'une équipe participant à la Code Game Jam, un événement ouvert à tous les étudiants du public dans la francophonie au cours duquel nous avions une trentaine d'heures pour développer tout un jeu vidéo autour d'un thème. Cette année-là, le thème était "Mélodie à l'infini".
 				</p>
+
 				<p>
-					J'ai donc élaboré le système de coordonnées 3D permettant de placer les étoiles, un système 3D relatif au vaisseau, ainsi qu'un système de coordonnées polaires 3D pour servir d'intermédiaire à la caméra. De manière plus anecdotique j'ai aussi codé le calcul de la taille apparente des étoiles. Car ce n'est pas de la vraie 3D dans notre jeu, simplement de la trigonométrie de niveau 3ème-2nde.
+					Nous avons donc décidé de développer le jeu "Symphony of Stars", inspiré très légérement de jeux comme Elite Dangerous ou encore Star Citizen, avec l'ajout d'une dimension musicale pour correspondre au thème.
 				</p>
+
+				<p>
+					Ma participation au jeu portait sur l'élaboration des différents systèmes de coordonnées nécessaires au jeu. En effet, libGDX ne gère pas nativement la 3D, il s'agit d'une librairie sommaire directement basée sur LWJGL (lib derrière minecraft). Cela veut dire que les seules coordonnées que la lib connaisse sont les coordonnées X, Y des pixels dans sa fenêtre.
+				</p>
+
+				<p>
+					J'ai donc élaboré le système de coordonnées 3D permettant de placer les étoiles, un système 3D relatif au vaisseau, ainsi qu'un système de coordonnées polaires 3D pour servir d'intermédiaire à la caméra. De manière plus anecdotiques j'ai aussi codé le calcul de la taille apparente des étoiles. Car ce n'est pas de la vraie 3D dans notre jeu, simplement de la trigonométrie de niveau 3ème-2nde.
+				</p>
+
 				<p>
 					J'ai aussi aidé à réaliser le code de déplacement du vaisseau sur et autour de ses axes. En effet, le vaisseau peut translater et pivoter sur ses 3 axes : X, Y et Z.
 				</p>
