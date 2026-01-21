@@ -122,7 +122,7 @@
 					pour leur participation à la CGJ 2025, en particulier pour la passion investie pendant cette trentaine d'heures.
 				</p>
 
-				<a href="https://github.com/Jordi-R66/CodeGameJam2025" target="_blank" class="btn-repo">
+				<a href="https://github.com/Jordi-R66/Symphony-of-Stars" target="_blank" class="btn-repo">
 					Voir le dépôt GitHub
 				</a>
 			</div>
