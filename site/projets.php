@@ -30,7 +30,7 @@
 				</div>
 
 				<p>
-					Ayant (presque) toujours été passionné par l'aérospatial, je me suis forcément intéressé à la manière dont l'on pouvait "prédire" la position de n'importe quel objet en orbite, et la calculer en temps réel.
+					Ayant (presque) toujours été passionné par l'aérospatiale, je me suis forcément intéressé à la manière dont l'on pouvait "prédire" la position de n'importe quel objet en orbite, et la calculer en temps réel.
 				</p>
 				<p>
 					À la fin de la Terminale, en 2024, j'ai donc commencé à travailler sur ce projet. Je me base sur les lois de Kepler pour ensuite déterminer l'emplacement de n'importe quel satellite (y compris l'ISS ou le télescope Hubble) en fonction de l'heure et de ses paramètres orbitaux (TLE).
