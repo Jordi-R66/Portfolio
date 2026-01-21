@@ -29,6 +29,17 @@ a {
 	text-decoration: none;
 }
 
+a.inclusion_texte {
+	font-weight: bold;
+	font-family: sans-serif;
+	color: var(--light-grey);
+}
+
+a.lien:hover {
+	transition: 0.5s;
+	color: var(--red);
+}
+
 main {
 	margin: auto;
 	flex: 1 0 auto;
@@ -75,4 +86,3 @@ footer {
 	height: auto;
 	display: block;
 }
-
