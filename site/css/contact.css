@@ -1,27 +1,62 @@
 @import url("variables.css");
 
-img.socials-icon {
-	width: 50px;
-	height: auto;
-}
+/* --- STYLES GÉNÉRAUX --- */
 
+/* Style des liens sociaux */
 ul,
 li {
 	list-style-type: none;
-	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+img.socials-icon {
+	width: 40px;
+	height: auto;
+	transition: transform 0.3s ease;
 }
 
 li.contact-links a {
-	margin: 5px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 10px 20px;
+	background-color: rgba(255, 255, 255, 0.05);
+	/* Fond subtil */
+	border-radius: 8px;
+	border: 1px solid transparent;
+	transition: all 0.3s ease;
+	font-weight: bold;
+	font-size: 1.1rem;
 }
+
+/* Effet au survol des liens sociaux */
+li.contact-links a:hover {
+	background-color: var(--dark-blue);
+	border-color: var(--red);
+	color: var(--red);
+}
+
+li.contact-links a:hover img.socials-icon {
+	transform: scale(1.1);
+}
+
+/* --- STRUCTURE PRINCIPALE --- */
 
 #info-contact-box {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	gap: 25px;
+	gap: 30px;
 	width: 100%;
+	margin-bottom: 40px;
+}
+
+#info-contact-box h3 {
+	color: var(--red);
+	font-size: 2rem;
+	margin-bottom: 10px;
 }
 
 /* Conteneur principal des deux colonnes */
@@ -29,95 +64,119 @@ li.contact-links a {
 	display: flex;
 	justify-content: center;
 	align-items: stretch;
-	/* force les colonnes à la même hauteur */
-	gap: 25px;
-	box-sizing: border-box;
+	/* Même hauteur pour les deux blocs */
+	gap: 30px;
+	flex-wrap: wrap;
+	/* Passe en colonne sur mobile */
+	max-width: 1000px;
+	width: 90%;
 }
 
-/* Retirer le background appliqué à tous les divs enfants afin
-   d'appliquer des fonds plus ciblés sur la leftbox et le formulaire */
+/* --- COLONNE GAUCHE (LIENS) --- */
 
 #info-contact-leftbox {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	/* centre verticalement le contenu */
 	align-items: center;
-	gap: 20px;
-	align-self: stretch; /* s'étire à la hauteur du formulaire */
-	min-width: 160px;
+	flex: 1;
+	min-width: 250px;
 	background-color: var(--dark-blue);
-	padding: 20px 16px;
-	border-radius: 8px;
-}
-
-/* Espacement interne pour que le contenu "respire" */
-#info-contact-leftbox .contact-links {
-	padding: 10px 0;
+	padding: 40px;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 #info-contact-leftbox .contact-links li {
-	margin: 8px 0;
+	margin: 15px 0;
+	width: 100%;
 }
 
-/* Style des liens dans la leftbox */
-#info-contact-leftbox a {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
+/* --- COLONNE DROITE (FORMULAIRE) --- */
 
-/* Colonne droite : formulaire */
 #info-contact-formulaire {
-	/* Ne pas occuper tout l'espace horizontal : laisser la largeur au formulaire */
-	flex: 0 0 auto;
+	flex: 2;
+	/* Prend 2x plus de place que la gauche */
+	min-width: 300px;
 	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	align-self: stretch; /* même hauteur que la leftbox */
-	padding: 0;
+	justify-content: center;
 }
 
 #info-contact-formulaire form {
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
-	width: 500px;
-	max-width: 90vw; /* responsive */
+	gap: 20px;
+	width: 100%;
 	background-color: var(--dark-blue);
-	padding: 20px;
-	border-radius: 8px;
+	padding: 40px;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 #info-contact-formulaire label {
 	text-align: left;
 	font-weight: bold;
+	color: var(--light-grey);
+	margin-bottom: -10px;
+	/* Rapproche le label de l'input */
+	margin-left: 5px;
 }
+
+/* --- INPUTS & TEXTAREA MODERNES --- */
 
 #info-contact-formulaire input,
-#info-contact-formulaire textarea,
-#info-contact-formulaire button {
+#info-contact-formulaire textarea {
 	width: 100%;
-	padding: 10px 12px;
+	padding: 15px;
 	font-size: 1rem;
-	border-radius: 5px;
-	border: none;
+	border-radius: 8px;
+	border: 2px solid transparent;
+	/* Bordure invisible par défaut */
+	background-color: rgba(0, 0, 0, 0.2);
+	/* Fond sombre */
+	color: white;
+	font-family: inherit;
 	box-sizing: border-box;
-}
-
-#info-contact-formulaire button:hover {
-	background-color: var(--dark-grey);
-	color: var(--red);
-	font-style: bold;
-	transition: 0.5s;
+	transition: all 0.3s ease;
 }
 
 #info-contact-formulaire textarea {
-	height: 120px;
+	height: 150px;
 	resize: vertical;
 }
 
+/* État Focus (quand on clique dedans) */
+#info-contact-formulaire input:focus,
+#info-contact-formulaire textarea:focus {
+	outline: none;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-color: var(--red);
+	/* Bordure rouge au focus */
+	box-shadow: 0 0 8px rgba(221, 82, 77, 0.3);
+	/* Légère lueur rouge */
+}
+
+/* --- BOUTON D'ENVOI --- */
+
 #info-contact-formulaire button {
-	cursor: pointer;
+	margin-top: 10px;
+	padding: 15px;
+	font-size: 1.1rem;
 	font-weight: bold;
+	border-radius: 8px;
+	border: 2px solid var(--red);
+	background-color: var(--red);
+	color: white;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#info-contact-formulaire button:hover {
+	background-color: transparent;
+	color: var(--red);
+	transform: translateY(-2px);
+	/* Petit effet de levitation */
+	box-shadow: 0 4px 10px rgba(221, 82, 77, 0.4);
 }
