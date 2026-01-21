@@ -90,6 +90,44 @@
 				</table>
 			</div>
 		</div>
+		<hr>
+		<div class="projet" id="cgj2025">
+			<h2>Symphony Of Stars - CGJ 2025</h2>
+			<div class="infos-projet">
+				<p>Projet parascolaire</p>
+				<hr>
+				<table class="langages-projet">
+					<tr>
+						<th>Technologie</th>
+						<th>Utilisation</th>
+					</tr>
+					<tr>
+						<td>Java</td>
+						<td>Entièreté</td>
+					</tr>
+					<tr>
+						<td>libGDX</td>
+						<td>library graphique/audio</td>
+					</tr>
+				</table>
+			</div>
+
+			<img class="illus-projet" src="img/CodeGameJam2.gif">
+
+			<div class="description-projet">
+				<p>En Janvier 2025, je faisais partie d'une équipe participant à la Code Game Jam, un événement ouvert à tous les étudiants du public dans la francophonie au cours duquel nous avions une trentaine d'heures pour développer tout un jeu vidéo autour d'un thème. Cette année-là, le thème était "Mélodie à l'infini".</p>
+
+				<p>Nous avons donc décidé de développer le jeu "Symphony of Stars", inspiré très légérement de jeux comme Elite Dangerous ou encore Star Citizen, avec l'ajout d'une dimension musicale pour correspondre au thème.</p>
+
+				<p>Ma participation au jeu portait sur l'élaboration des différents systèmes de coordonnées nécessaires au jeu. En effet, libGDX ne gère pas nativement la 3D, il s'agit d'une librairie sommaire directement basée sur LWJGL (lib derrière minecraft). Cela veut dire que les seules coordonnées que la lib connaisse sont les coordonnées X, Y des pixels dans sa fenêtre.</p>
+
+				<p>J'ai donc élaboré le système de coordonnées 3D permettant de placer les étoiles, un système 3D relatif au vaisseau, ainsi qu'un système de coordonnées polaires 3D pour servir d'intermédiaire à la caméra. De manière plus anecdotiques j'ai aussi codé le calcul de la taille apparente des étoiles. Car ce n'est pas de la vraie 3D dans notre jeu, simplement de la trigonométrie de niveau 3ème-2nde.</p>
+
+				<p>J'ai aussi aidé à réaliser le code de déplacement du vaisseau sur et autour de ses axes. En effet, le vaisseau peut translater et pivoter sur ses 3 axes : X, Y et Z.</p>
+
+				<p>Je tiens à remercier <a class="lien inclusion_texte" href="https://bastienluben.dev/">Bastien</a>, <a class="lien inclusion_texte" href="https://rybois-dev.github.io/portfolio/src/index.html">Clément</a> et <a class="lien inclusion_texte" href="https://dellarolir.github.io/Romain_Dellaroli.github.io/">Romain</a> pour leur participation à la CGJ 2025, en particulier pour la passion investie pendant cette trentaine d'heures.</p>
+			</div>
+		</div>
 	</main>
 
 	<?php require_once "backend/html/footer.html"; ?>
