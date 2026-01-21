@@ -9,7 +9,7 @@ ini_set('error_log', __DIR__ . '/php-error.log');
 
 var_dump($_POST);*/
 
-$format_temps = "[d/m/Y @ H:i:s UTC]";
+$format_temps = "[d/m/Y @ H:i:s]";
 
 $REGEX_MAIL = '/^[^\s@]+@[^\s@]+\.[^\s@]+$/';
 $REGEX_TEL = '/^\+?(\d{1,3})?[\s.-]?(?:\(?\d{1,4}\)?[\s.-]?)*\d{1,4}$/';
