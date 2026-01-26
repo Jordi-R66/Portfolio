@@ -55,7 +55,7 @@ if ($continuer) {
 	}
 }
 
-header("Location: https://jordi-rocafort.fr/portfolio/contact.php?statut=$rt");
+header("Location: https://portfolio.jordi-rocafort.fr/contact.php?statut=$rt");
 exit;
 
 ?>
