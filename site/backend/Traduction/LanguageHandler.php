@@ -84,8 +84,6 @@ class LanguageHandler {
 			fclose($handle);
 		}
 
-		var_dump($output);
-
 		return $output;
 	}
 }
