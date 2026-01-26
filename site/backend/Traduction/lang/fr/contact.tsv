@@ -1,1 +1,13 @@
 text_code	text
+page_title	Jordi Rocafort - Contact
+main_title	Comment me contacter
+email_warning	Suite à des abus commis sur mon adresse mail, j'ai décidé de la retirer du portfolio, merci de me contacter soit par LinkedIn/GitHub soit par le formulaire ci-dessous.
+msg_success	Votre message a pu être envoyé !
+msg_error	Votre message n'a pas pu être envoyé, veuillez réessayer plus tard
+social_title	Retrouvez-moi
+social_desc	Envie d'en savoir plus sur mon parcours ou de voir mes codes sources ? Connectons-nous !
+form_obj	Objet
+form_msg	Message
+form_tel	Téléphone
+form_email	Email
+btn_send	Envoyer
