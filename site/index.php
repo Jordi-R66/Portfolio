@@ -5,6 +5,7 @@
 	<?php require_once "backend/html/head.html"; ?>
 	<meta name="description" content="Portfolio de Jordi Rocafort - Étudiant en Informatique (DACS) passionné par l'aérospatial et le développement bas niveau.">
 	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<meta name="robots" content="index">
 	<title>Jordi Rocafort - Accueil</title>
 </head>
 

@@ -1,9 +1,9 @@
 User-agent: *
 
 # Bloquer tous les dossiers backend partout
-Disallow: /*/backend/
+Disallow: /backend/*
 
 # Autoriser tout le portfolio
-Allow: /portfolio/index.php
+Allow: /index.php
 
 Sitemap: https://portfolio.jordi-rocafort.fr/sitemap.xml
