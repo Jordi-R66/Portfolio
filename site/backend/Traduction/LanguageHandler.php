@@ -34,7 +34,7 @@ class LanguageHandler {
 	}
 
 	static function getKnownLanguages(): array {
-		$dossier = './files';
+		$dossier = './lang';
 
 		// Le pattern '/*' sélectionne tout le contenu, le flag ne garde que les dossiers
 		$sousDossiers = glob($dossier . '/*', GLOB_ONLYDIR);
