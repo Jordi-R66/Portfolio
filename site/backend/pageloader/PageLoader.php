@@ -18,7 +18,7 @@ class PageLoader {
 					$line = PageLoader::loadHTML(str_replace(".html", "", $requirement));
 				}
 
-				$output = "$output$line";
+				$output = "$output$line\n";
 			}
 
 			fclose($fp);
