@@ -14,7 +14,7 @@ class LanguageHandler {
 		// On sépare les différentes entrées par la virgule
 		foreach (explode(',', $httpAcceptLanguage) as $part) {
 			$parts = explode(';', $part);
-			$lang = trim($parts[0]);
+			$lang = explode("_", trim($parts[0]))[0];
 			$q = 1.0; // Priorité par défaut
 
 			// On cherche le paramètre 'q=' s'il existe
@@ -37,8 +37,17 @@ class LanguageHandler {
 
 	static function getKnownLanguages(): array {
 		// Le pattern '/*' sélectionne tout le contenu, le flag ne garde que les dossiers
-		$sousDossiers = glob(self::DOSSIER_LANGUES . '/*', GLOB_ONLYDIR);
+		$sousDossiers = glob(self::DOSSIER_LANGUES . '*', GLOB_ONLYDIR);
+
+		foreach ($sousDossiers as $i => $path) {
+			$sousDossiers[$i] = str_replace(self::DOSSIER_LANGUES, "", $sousDossiers[$i]);
+		}
+
 		return $sousDossiers;
+	}
+
+	static function getCommonLanguages(): array {
+		return array_intersect(self::getClientLanguages(), self::getKnownLanguages());
 	}
 
 	static function getTranslatedPages($lang): array {
@@ -52,8 +61,8 @@ class LanguageHandler {
 	}
 
 	/**
-	 * $lang: the language code
-	 * $page: the name of the page without the file extension
+	 * @param string $lang: the language code
+	 * @param string $page: the name of the page without the file extension
 	 */
 	static function getPageText(string $lang, string $page): array {
 		$output = array();
