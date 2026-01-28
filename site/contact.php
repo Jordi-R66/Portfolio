@@ -15,7 +15,9 @@ if (isset($_GET["statut"]) && ($_GET["statut"] === "0" || $_GET["statut"] === "1
 	$status = "<h4 style=\"color: $color;\">$texte</h4>";
 }
 
-$content = str_replace("MESSAGE_STATUS", $status, $content);
+$lookup = array("MESSAGE_STATUS" => $status);
+
+$content = PageLoader::replaceTextTag($lookup, $content);
 
 echo $content;
 exit;
