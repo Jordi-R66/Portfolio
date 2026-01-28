@@ -1,6 +1,8 @@
 <?php
 
 require_once __DIR__ . '/backend/pageloader/PageLoader.php';
+require_once __DIR__ . '/backend/Traduction/LanguageHandler.php';
+
 
 $content = PageLoader::loadHTML("contact");
 
@@ -15,9 +17,12 @@ if (isset($_GET["statut"]) && ($_GET["statut"] === "0" || $_GET["statut"] === "1
 	$status = "<h4 style=\"color: $color;\">$texte</h4>";
 }
 
-$lookup = array("MESSAGE_STATUS" => $status);
+$tagDict = array("MESSAGE_STATUS" => $status);
+$tagDict = array_merge($tagDict, LanguageHandler::getPageText("en", "header"));
+$tagDict = array_merge($tagDict, LanguageHandler::getPageText("en", "footer"));
+$tagDict = array_merge($tagDict, LanguageHandler::getPageText("en", "contact"));
 
-$content = PageLoader::replaceTextTag($lookup, $content);
+$content = PageLoader::replaceTextTag($tagDict, $content);
 
 echo $content;
 exit;

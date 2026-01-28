@@ -1,0 +1,13 @@
+text_code	text
+page_title	Jordi Rocafort - Contact
+main_title	How to contact me
+email_warning	Due to some abuse made with my email address, I decided not to put it on my portfolio, please instead use either LinkedIn or GitHub or the form below.
+msg_success	You message has been successfully sent!
+msg_error	Your message couldn't be sent, please try again later.
+social_title	Find me there
+social_desc	Want to know more about me, or to see my source codes? Let's get in touch!
+form_obj	Subject
+form_msg	Message
+form_tel	Phone number
+form_email	Email address
+btn_send	Send
