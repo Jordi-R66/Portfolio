@@ -1,7 +1,7 @@
 text_code	text
 page_title	Jordi Rocafort - À Propos
 section_profile_title	Un profil scientifique et technique
-profile_p1	Passionné par les <strong>sciences dures</strong> (physique, aérospatiale) autant que par l'informatique, j'ai choisi cette voie afin de <strong>comprendre le fonctionnement interne</strong> des machines, concevoir des outils de simulation, et non pas uniquement créer des interfaces graphiques.
+profile_p1	Passionné par les <strong>sciences</strong> (physique, aérospatiale) autant que par l'informatique, j'ai choisi cette voie afin de <strong>comprendre le fonctionnement interne</strong> des machines, concevoir des outils de simulation, et non pas uniquement créer des interfaces graphiques.
 profile_p2	Mon approche du développement est guidée par la curiosité et la rigueur scientifique : je cherche à savoir ce qui se passe "sous le capot". Plutôt que d'utiliser des boîtes noires, je préfère souvent réimplémenter des concepts techniques (comme dans mes projets personnels) pour en maîtriser les mécanismes, de la gestion de la mémoire aux algorithmes mathématiques complexes.
 section_path_title	Mon Parcours
 path_p1	Mon cursus a débuté par un <strong>Bac STI2D option SIN</strong>, qui a confirmé mon attrait pour la technique et m'a apporté des bases en électronique et en conception durable. J'ai ensuite intégré le <strong>BUT Informatique</strong> à Montpellier en choisissant spécifiquement le parcours <strong>DACS</strong> (Déploiement d'Applications Communicantes et Sécurisées).
@@ -21,7 +21,7 @@ section_timeline_title	Les étapes clés
 timeline_2018	Découverte de la programmation (Python) et premiers projets personnels.
 timeline_2021	Obtention du <strong>BIA</strong> (Brevet d'Initiation Aéronautique) - Mention Très Bien.
 timeline_2024	Bac STI2D (Mention TB) et entrée en BUT Informatique.
-timeline_2025	Première Game Jam et développement de projets techniques avancés (C).
+timeline_2025	Première Game Jam (Java) et développement de projets techniques avancés (C).
 section_tools_title	Boîte à outils technique
 tools_core_title	Cœur de métier
 tools_core_desc	Développement système, structures de données, algorithmique complexe.
