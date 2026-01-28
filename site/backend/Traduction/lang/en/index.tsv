@@ -1,0 +1,15 @@
+text_code	text
+page_title	Jordi Rocafort - Home
+hero_subtitle	French CS Bachelor Student • Cybersec
+hero_intro	Passionate about low level development, scientific simualtions and aerospace. I build my own solutions to understand what's actually happening "under the hood".
+btn_projects	Browse my projects
+btn_about	Get to know more about me
+card_projects_title	My Projects
+card_projects_desc	From orbital simulations (TLE) to a game engine in fake 3D, discover my technical accomplishments.
+card_projects_link	Explore &rarr;
+card_profile_title	My Profile
+card_profile_desc	My background, my technical skills (C, Java, Systems) and my philosophy as a developper.
+card_profile_link	Discover &rarr;
+card_contact_title	Contact Me
+card_contact_desc	A technical query, an internship offer or simply want to chat?
+card_contact_link	Send a message &rarr;
