@@ -5,6 +5,7 @@ require_once __DIR__ . '/backend/Traduction/LanguageHandler.php';
 require_once __DIR__ . '/backend/misc.php';
 
 $page = getCurrentPage();
+$lang = LanguageHandler::pickLanguage();
 
 $content = PageLoader::loadHTML($page);
 
@@ -20,9 +21,9 @@ if (isset($_GET["statut"]) && ($_GET["statut"] === "0" || $_GET["statut"] === "1
 }
 
 $tagDict = array("MESSAGE_STATUS" => $status);
-$tagDict = array_merge($tagDict, LanguageHandler::getPageText("fr", "header"));
-$tagDict = array_merge($tagDict, LanguageHandler::getPageText("fr", "footer"));
-$tagDict = array_merge($tagDict, LanguageHandler::getPageText("fr", $page));
+$tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, "header"));
+$tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, "footer"));
+$tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, $page));
 
 $content = PageLoader::replaceTextTag($tagDict, $content);
 

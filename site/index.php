@@ -4,13 +4,14 @@ require_once __DIR__ . '/backend/Traduction/LanguageHandler.php';
 require_once __DIR__ . '/backend/misc.php';
 
 $page = getCurrentPage();
+$lang = LanguageHandler::pickLanguage();
 
 $content = PageLoader::loadHTML($page);
 
 $tagDict = array();
-$tagDict = array_merge($tagDict, LanguageHandler::getPageText("fr", "header"));
-$tagDict = array_merge($tagDict, LanguageHandler::getPageText("fr", "footer"));
-$tagDict = array_merge($tagDict, LanguageHandler::getPageText("fr", $page));
+$tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, "header"));
+$tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, "footer"));
+$tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, $page));
 
 $content = PageLoader::replaceTextTag($tagDict, $content);
 
