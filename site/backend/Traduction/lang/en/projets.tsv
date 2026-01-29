@@ -1,0 +1,29 @@
+text_code	text
+page_title	Jordi Rocafort - Projects
+tle_title	TLE-Decoder
+tle_type	Personal project - 2024
+tle_desc1	Having (almost) always been passionate about aerospace, je me suis forcément intéressé à la manière dont l'on pouvait "prédire" la position de n'importe quel objet en orbite, et la calculer en temps réel.
+tle_desc2	À la fin de la Terminale, en 2024, j'ai donc commencé à travailler sur ce projet. Je me base sur les lois de Kepler pour ensuite déterminer l'emplacement de n'importe quel satellite (y compris l'ISS ou le télescope Hubble) en fonction de l'heure et de ses paramètres orbitaux (TLE).
+tle_desc3	Le programme principal (le backend) est codé en C, c'est lui qui effectue les calculs mathématiques et gère les données. Le téléchargement des TLE est lui géré par un script Python. Un prototype du programme a été réalisé en Python.
+tle_btn	See the source code
+jav_title	Jav'Enchère
+jav_type	Academic project
+jav_desc1	Dans le cadre de la SAÉ du troisième semestre de mon CS Bachelor, j'ai participé au développement d'un système d'enchères sécurisées à plis fermés (Lors des enchères personne ne connaît les prix que les acheteurs proposent, et sont révélés à la fin de la phase d'enchère).
+jav_desc2	Pour être plus précis, il s'agit des enchères de Vickrey, une forme d'enchères reposant sur la théorie des jeux. Dans ce modèle, celui qui a proposé le plus haut prix remporte l'enchère mais ne paye que le deuxième plus haut prix.
+jav_desc3	Au cours de ce projet je me suis principalement chargé de l'élaboration de la communication entre le logiciel utilisateur et la partie serveur. J'ai écrit tout le code nécessaire à la communication entre les utilisateurs et le serveur et assuré le chiffrement en utilisant SSL/TLS via un certificat auto-signé, et l'emploi de RSA 4096. L'interface graphique ainsi que la logique de la gestion des enchères ont été réalisées par les autres membres de l'équipe.
+jav_thanks	J'aimerais saluer <a class="lien inclusion_texte" href="https://flothival.github.io/Florent_LABROUSSE-LHUISSIER/" target="_blank" rel="noopener noreferrer" style="color: var(--red);">Florent</a> et <a class="lien inclusion_texte" href="" target="_blank" rel="noopener noreferrer" style="color: var(--red);">Rayane</a> pour leur investissement dans cette SAÉ.
+sos_title	The Symphony Of Stars
+sos_type	Code Game Jam - 2025
+sos_desc1	En Janvier 2025, je faisais partie d'une équipe participant à la Code Game Jam, un événement ouvert à tous les étudiants du public dans la francophonie au cours duquel nous avions une trentaine d'heures pour développer tout un jeu vidéo autour d'un thème. Cette année-là, le thème était "Mélodie à l'infini".
+sos_desc2	Nous avons donc décidé de développer le jeu "Symphony of Stars", inspiré très légérement de jeux comme Elite Dangerous ou encore Star Citizen, avec l'ajout d'une dimension musicale pour correspondre au thème.
+sos_desc3	Ma participation au jeu portait sur l'élaboration des différents systèmes de coordonnées nécessaires au jeu. En effet, libGDX ne gère pas nativement la 3D, il s'agit d'une library sommaire directement basée sur LWJGL (lib derrière minecraft). Cela veut dire que les seules coordonnées que la lib connaisse sont les coordonnées X, Y des pixels dans sa fenêtre.
+sos_desc4	J'ai donc élaboré le système de coordonnées 3D permettant de placer les étoiles, un système 3D relatif au vaisseau, ainsi qu'un système de coordonnées polaires 3D pour servir d'intermédiaire à la caméra. De manière plus anecdotiques j'ai aussi codé le calcul de la taille apparente des étoiles. Car ce n'est pas de la vraie 3D dans notre jeu, simplement de la trigonométrie de niveau 3ème-2nde.
+sos_desc5	J'ai aussi aidé à réaliser le code de déplacement du vaisseau sur et autour de ses axes. En effet, le vaisseau peut translater et pivoter sur ses 3 axes : X, Y et Z.
+sos_thanks	Je tiens à remercier <a class="lien inclusion_texte" href="https://bastienluben.dev/" target="_blank" rel="noopener noreferrer" style="color: var(--red);">Bastien</a>, <a class="lien inclusion_texte" href="https://rybois-dev.github.io/portfolio/src/index.html" target="_blank" rel="noopener noreferrer" style="color: var(--red);">Clément</a> et <a class="lien inclusion_texte" href="https://dellarolir.github.io/Romain_Dellaroli.github.io/" target="_blank" rel="noopener noreferrer" style="color: var(--red);">Romain</a> pour leur participation à la CGJ 2025, en particulier pour la passion investie pendant cette trentaine d'heures.
+sos_btn	See the GitHub repository
+lib_title	myOwnCLib
+lib_type	Personal project
+lib_desc1	Ce projet est né d'une volonté de comprendre ce qui se cache derrière les abstractions des langages de haut niveau. L'objectif est de recréer "from scratch" une bibliothèque standard C modulaire, portable et performante.
+lib_desc2	J'ai implémenté des structures de données génériques (Listes chaînées, Dictionnaires, Piles) et une gestion rigoureuse de l'allocation dynamique.
+lib_desc3	La partie la plus technique concerne le module <strong>VariableSizeInt</strong> (BigInt) pour manipuler des entiers de taille arbitraire, incluant la multiplication de Karatsuba et l'arithmétique modulaire.
+lib_btn	See the library
