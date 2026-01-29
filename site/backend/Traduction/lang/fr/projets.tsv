@@ -4,7 +4,7 @@ tle_title	TLE-Decoder
 tle_type	Projet personnel - 2024
 tle_desc1	Ayant (presque) toujours été passionné par l'aérospatiale, je me suis forcément intéressé à la manière dont l'on pouvait "prédire" la position de n'importe quel objet en orbite, et la calculer en temps réel.
 tle_desc2	À la fin de la Terminale, en 2024, j'ai donc commencé à travailler sur ce projet. Je me base sur les lois de Kepler pour ensuite déterminer l'emplacement de n'importe quel satellite (y compris l'ISS ou le télescope Hubble) en fonction de l'heure et de ses paramètres orbitaux (TLE).
-tle_desc3	Le programme principal (le backend) est codé en C, c'est lui qui effectue les calculs mathématiques et gère les données. Le téléchargement des TLE est lui géré par un script Python. Un prototype du programme a été réalisé en Python.
+tle_desc3	Le programme principal (le backend) est codé en C, c'est lui qui effectue les calculs mathématiques et gère les données. Le téléchargement des TLE est lui géré par un script Python. Un prototype du programme a aussi été réalisé en Python.
 tle_btn	Voir le code source
 jav_title	Jav'Enchère
 jav_type	Projet académique
@@ -25,5 +25,5 @@ lib_title	myOwnCLib
 lib_type	Projet personnel
 lib_desc1	Ce projet est né d'une volonté de comprendre ce qui se cache derrière les abstractions des langages de haut niveau. L'objectif est de recréer "from scratch" une bibliothèque standard C modulaire, portable et performante.
 lib_desc2	J'ai implémenté des structures de données génériques (Listes chaînées, Dictionnaires, Piles) et une gestion rigoureuse de l'allocation dynamique.
-lib_desc3	La partie la plus technique concerne le module <strong>VariableSizeInt</strong> (BigInt) pour manipuler des entiers de taille arbitraire, incluant la multiplication de Karatsuba et l'arithmétique modulaire.
-lib_btn	Voir la librairie
+lib_desc3	La partie la plus technique concerne le module <strong>VariableSizeInt</strong> (BigInt) pour manipuler des entiers de taille arbitraire, incluant l'arithmétique modulaire et prochainement la multiplication de Karatsuba.
+lib_btn	Voir la bibliothèque
