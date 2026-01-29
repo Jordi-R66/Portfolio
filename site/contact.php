@@ -2,9 +2,11 @@
 
 require_once __DIR__ . '/backend/pageloader/PageLoader.php';
 require_once __DIR__ . '/backend/Traduction/LanguageHandler.php';
+require_once __DIR__ . '/backend/misc.php';
 
+$page = getCurrentPage();
 
-$content = PageLoader::loadHTML("contact");
+$content = PageLoader::loadHTML($page);
 
 $status = "";
 
@@ -18,9 +20,9 @@ if (isset($_GET["statut"]) && ($_GET["statut"] === "0" || $_GET["statut"] === "1
 }
 
 $tagDict = array("MESSAGE_STATUS" => $status);
-$tagDict = array_merge($tagDict, LanguageHandler::getPageText("en", "header"));
-$tagDict = array_merge($tagDict, LanguageHandler::getPageText("en", "footer"));
-$tagDict = array_merge($tagDict, LanguageHandler::getPageText("en", "contact"));
+$tagDict = array_merge($tagDict, LanguageHandler::getPageText("fr", "header"));
+$tagDict = array_merge($tagDict, LanguageHandler::getPageText("fr", "footer"));
+$tagDict = array_merge($tagDict, LanguageHandler::getPageText("fr", $page));
 
 $content = PageLoader::replaceTextTag($tagDict, $content);
 
