@@ -15,6 +15,7 @@ class LanguageHandler {
 		foreach (explode(',', $httpAcceptLanguage) as $part) {
 			$parts = explode(';', $part);
 			$lang = explode("_", trim($parts[0]))[0];
+			$lang = explode("-", trim($parts[0]))[0];
 			$q = 1.0; // Priorité par défaut
 
 			// On cherche le paramètre 'q=' s'il existe
@@ -91,6 +92,20 @@ class LanguageHandler {
 			}
 
 			fclose($handle);
+		}
+
+		return $output;
+	}
+
+	static function pickLanguage(): string {
+		$output = "";
+
+		if (!isset($_GET["lang"])) {
+			$commonLangs = self::getCommonLanguages();
+			$output = count($commonLangs) > 0 ? $commonLangs[0] : "en";
+		} else {
+			$lang = $_GET["lang"];
+			$output = in_array($lang, self::getKnownLanguages()) ? $lang : "en";
 		}
 
 		return $output;
