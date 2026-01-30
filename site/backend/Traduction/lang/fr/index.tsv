@@ -6,10 +6,10 @@ btn_projects	Voir mes projets
 btn_about	En savoir plus sur moi
 card_projects_title	Mes Projets
 card_projects_desc	De la simulation orbitale (TLE) au moteur de jeu en fausse 3D, découvrez mes réalisations techniques.
-card_projects_link	Explorer &rarr;
+card_projects_link	Explorer
 card_profile_title	Mon Profil
 card_profile_desc	Mon parcours, mes compétences techniques (C, Java, Système) et ma philosophie de développeur.
-card_profile_link	Découvrir &rarr;
+card_profile_link	Découvrir
 card_contact_title	Me Contacter
 card_contact_desc	Une question technique, une proposition de stage ou simplement envie d'échanger ?
-card_contact_link	Envoyer un message &rarr;
+card_contact_link	Envoyer un message
