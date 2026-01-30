@@ -1,5 +1,7 @@
 <?php
 
+require_once "langMenuGenerator.php";
+
 class LanguageHandler {
 	private const DOSSIER_LANGUES = __DIR__ . '/lang/';
 
