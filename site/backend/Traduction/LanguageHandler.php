@@ -96,6 +96,11 @@ class LanguageHandler {
 			fclose($handle);
 		}
 
+		if ($page === 'header') {
+			// On appelle le générateur qui renvoie le <li> complet
+			$output['lang_menu'] = LangMenuGenerator::generate($lang);
+		}
+
 		return $output;
 	}
 

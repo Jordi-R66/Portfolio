@@ -3,11 +3,11 @@ section_profile_title	A scientific and technical profile
 profile_p1	Passionate about <strong>sciences</strong> (physics, aerospace) as much as computer science, I chose this path to <strong>understand the internal functioning</strong> of machines, design simulation tools, and not just create graphical interfaces.
 profile_p2	My development approach is guided by curiosity and scientific rigor: I seek to know what happens "under the hood". Rather than using black boxes, I often prefer to re-implement technical concepts (as in my personal projects) to master their mechanisms, from memory management to complex mathematical algorithms.
 section_path_title	My Background
-path_p1	My journey began with a <strong>Bac STI2D option SIN</strong>, which confirmed my attraction to technology and provided me with foundations in electronics and sustainable design. I then joined the <strong>BUT Informatique</strong> in Montpellier, specifically choosing the <strong>DACS</strong> track (Deployment of Communicating and Secure Applications).
+path_p1	My journey began with a <strong>Bac STI2D option SIN</strong>, which confirmed my attraction to technology and provided me with foundations in electronics and sustainable design. I then joined the <strong>CS Bachelor</strong> at the UIT of Montpellier, specifically choosing the <strong>DACS</strong> track (Deployment of Communicating and Secure Applications).
 path_p2	This choice is strategic: unlike web-oriented tracks, the DACS track focuses on real system constraints, networking, and security, crucial areas for critical computing.
-path_p3	However, I consider that my true training is also done <strong>autodidactically</strong>. Coding since 2018 (Python, then C), it is through my personal projects that I acquired my technical logic and research capability.I then joined the <strong>BUT Informatique</strong> in Montpellier, specifically choosing the <strong>DACS</strong> track (Deployment of Communicating and Secure Applications).The UIT now provides me with the indispensable professional framework: software quality, project management, and teamwork.
+path_p3	However, I consider that my true training is also done <strong>autodidactically</strong>. Coding since 2018 (Python, then C), it is through my personal projects that I acquired my technical logic and research capability. I then joined the <strong>CS Bachelor</strong> in Montpellier, specifically choosing the <strong>DACS</strong> track (Deployment of Communicating and Secure Applications).The UIT now provides me with the indispensable professional framework: software quality, project management, and teamwork.
 section_project_title	Long term Professional Project
-project_p1	At the end of my BUT, I plan to continue my studies (Master's) or enter the workforce, depending on the technical opportunities that arise. One thing is certain, I prioritize <strong>operational technique</strong> over pure management. I want to maintain a majority of technical work in my future positions rather than managerial management, without ruling out teamwork, as shown by my academic projects.
+project_p1	At the end of my Bachelor, I plan to continue my studies (Master's) or enter the workforce, depending on the technical opportunities that arise. One thing is certain, I prioritize <strong>operational technique</strong> over pure management. I want to maintain a majority of technical work in my future positions rather than managerial management, without ruling out teamwork, as shown by my academic projects.
 project_p2	My goal is to become a developer in the <strong>Aerospace / Spatial</strong> sector. I wish to contribute to the development of critical code, whether for scientific data processing, ground-probe communication protocols, or onboard computing for satellites. The rigor and reliability required by this sector perfectly match my vision of computer science.
 section_passions_title	My passions
 passion_astro_title	Astronomy
@@ -19,7 +19,7 @@ passion_lowlevel_desc	Strong interest in OS functioning, memory management (C), 
 section_timeline_title	The key steps
 timeline_2018	Discovery of programming (Python) and first personal projects.
 timeline_2021	Obtained the <strong>BIA</strong> (Aeronautical Initiation Certificate) - With Highest Honors.
-timeline_2024	Bac STI2D (Highest Honors) and entry into BUT Informatique.
+timeline_2024	Bac STI2D (Highest Honors) and entry into a CS Bachelor at UIT of Montpellier.
 timeline_2025	First Game Jam (Java) and development of advanced technical projects (C).
 section_tools_title	Technical Toolbox
 tools_core_title	Core Skills

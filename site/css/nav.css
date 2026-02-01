@@ -129,6 +129,107 @@ header {
 }
 
 /* =========================================
+   --- MENU DÉROULANT LANGUES (PC) ---
+   ========================================= */
+
+/* L'élément parent (LI) */
+.dropdown-item {
+	position: relative;
+	/* Pour positionner le sous-menu par rapport à lui */
+	cursor: pointer;
+}
+
+/* La petite flèche */
+.arrow {
+	font-size: 0.8rem;
+	margin-left: 5px;
+	transition: transform 0.3s;
+}
+
+/* Rotation de la flèche au survol */
+.dropdown-item:hover .arrow {
+	transform: rotate(180deg);
+}
+
+/* Le sous-menu (UL) caché par défaut */
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	/* Juste en dessous du lien parent */
+	left: 50%;
+	transform: translateX(-50%);
+	/* Centré par rapport au parent */
+
+	background-color: var(--dark-grey);
+	border-top: 2px solid var(--red);
+	/* Rappel de la charte */
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
+	list-style: none;
+	padding: 10px 0;
+	margin: 0;
+	min-width: 80px;
+
+	/* Animation d'apparition */
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+	z-index: 2000;
+}
+
+/* Affichage au survol (Uniquement PC) */
+.dropdown-item:hover .dropdown-menu {
+	opacity: 1;
+	visibility: visible;
+	top: 130%;
+	/* Petit effet de descente */
+}
+
+/* Les liens dans le sous-menu */
+.dropdown-menu li {
+	display: block;
+	text-align: center;
+}
+
+.dropdown-menu li a {
+	display: block;
+	padding: 10px 15px;
+	font-size: 1rem;
+	color: var(--light-grey);
+	white-space: nowrap;
+}
+
+/* Suppression du soulignement standard nav-links pour le sous-menu */
+.dropdown-menu li a::after {
+	display: none;
+}
+
+/* Hover simple sur les éléments du sous-menu */
+.dropdown-menu li a:hover {
+	color: var(--red);
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* --- DRAPEAUX SVG --- */
+.nav-flag {
+	width: 25px;
+	/* Largeur fixe pour aligner tout le monde */
+	height: auto;
+	/* Hauteur proportionnelle */
+	vertical-align: middle;
+	/* Aligne le drapeau avec le texte */
+	margin-right: 8px;
+	/* Espace entre le drapeau et le texte/flèche */
+
+	border-radius: 2px;
+	/* Optionnel : petits bords arrondis */
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	/* Optionnel : légère ombre pour détacher du fond gris */
+
+	display: inline-block;
+}
+
+/* =========================================
    --- VERSION MOBILE (Tablette & Tel) ---
    ========================================= */
 
@@ -155,7 +256,7 @@ header {
 		z-index: 1002;
 	}
 
-	/* LE DROPDOWN */
+	/* LE DROPDOWN PRINCIPAL */
 	.nav-links {
 		position: absolute;
 		top: 60px;
@@ -168,12 +269,19 @@ header {
 		padding-right: 20px;
 		/* Décalage par rapport au bord droit */
 		gap: 0;
+
+		/* Gestion ouverture */
 		max-height: 0;
 		overflow: hidden;
-		transition: max-height 0.4s ease-out;
+		transition: max-height 0.5s ease-in-out;
 		box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 		box-sizing: border-box;
-		/* Important ! */
+	}
+
+	/* Ouverture du menu burger */
+	#menu-toggle:checked~.nav-links {
+		/* CORRECTION : 100vh pour être sûr que tout rentre si le sous-menu est ouvert */
+		max-height: 100vh;
 	}
 
 	.nav-links li {
@@ -195,12 +303,56 @@ header {
 		right: 0;
 	}
 
-	/* Ouverture */
-	#menu-toggle:checked~.nav-links {
-		max-height: 300px;
+	/* --- LE SOUS-MENU LANGUE (Mobile) --- */
+
+	/* Par défaut, caché et remis dans le flux */
+	.dropdown-item:hover .dropdown-menu,
+	/* On annule l'effet hover PC */
+	.dropdown-menu {
+		position: static;
+		transform: none;
+		box-shadow: none;
+		border-top: none;
+		border-left: 3px solid var(--red);
+		/* Bordure rouge verticale */
+		background-color: rgba(0, 0, 0, 0.2);
+
+		width: 100%;
+		padding: 0;
+		margin: 0;
+
+		/* C'EST ICI QUE CA SE JOUE : Caché par défaut */
+		display: none;
+		opacity: 1;
+		visibility: visible;
 	}
 
-	/* Animation Croix */
+	/* QUAND ON CLIQUE (Classe ajoutée par ton PHP) */
+	.dropdown-item.open .dropdown-menu {
+		display: block;
+		/* On l'affiche */
+		animation: none;
+	}
+
+	/* On tourne la flèche quand c'est ouvert */
+	.dropdown-item.open .arrow {
+		transform: rotate(180deg);
+		display: inline-block;
+	}
+
+	.dropdown-menu li {
+		text-align: right;
+		padding-right: 20px;
+		border-bottom: none;
+	}
+
+	.dropdown-menu li a {
+		font-size: 1.1rem;
+		padding: 15px 0;
+		color: var(--light-grey);
+	}
+
+	/* Animation Croix du Burger */
 	#menu-toggle:checked~.burger-icon span:nth-child(1) {
 		transform: rotate(45deg) translate(5px, 5px);
 	}
@@ -211,5 +363,10 @@ header {
 
 	#menu-toggle:checked~.burger-icon span:nth-child(3) {
 		transform: rotate(-45deg) translate(7px, -7px);
+	}
+
+	.nav-flag {
+		width: 28px;
+		/* Un peu plus gros sur mobile pour le tactile */
 	}
 }
