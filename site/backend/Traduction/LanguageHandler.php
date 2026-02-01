@@ -132,11 +132,13 @@ class LanguageHandler {
 		if (!LangCookieManager::cookieExists()) {
 			if (!isset($_GET["lang"])) {
 				$commonLangs = self::getCommonLanguages();
-				$output = count($commonLangs) > 0 ? $commonLangs[0] : "en";
+				$output = count($commonLangs) > 0 ? $commonLangs[0] : "fr";
 			} else {
 				$lang = $_GET["lang"];
-				$output = in_array($lang, self::getKnownLanguages()) ? $lang : "en";
+				$output = in_array($lang, self::getKnownLanguages()) ? $lang : "fr";
 			}
+
+			LangCookieManager::setCookie($output);
 		} else {
 			$output = LangCookieManager::readCookie();
 		}
