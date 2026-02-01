@@ -3,7 +3,6 @@
 class LangMenuGenerator {
 	public static function generate(string $currentLang): string {
 		$languages = LanguageHandler::getKnownLanguages();
-		$queryParams = $_GET;
 
 		$upperLangCode = strtoupper($currentLang);
 
@@ -26,7 +25,7 @@ class LangMenuGenerator {
 			$upperLangCode = strtoupper($langCode);
 
 			$queryParams['lang'] = $langCode;
-			$url = '?' . http_build_query($queryParams);
+			$url = 'https://portfolio.jordi-rocafort.fr/changeLanguage.php?' . http_build_query($queryParams);
 			$label = "<img src=\"img/flags/{$langCode}.svg\" alt=\"$upperLangCode\" class=\"nav-flag\">";
 
 			$html .= "<li><a href=\"{$url}\">{$label}</a></li>";

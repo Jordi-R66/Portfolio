@@ -1,6 +1,28 @@
 <?php
 
 require_once "langMenuGenerator.php";
+require __DIR__ . "/../CookieManager.php";
+
+class LangCookieManager {
+	private const COOKIE_TTL = 86400;
+	private const COOKIE_NAME = "lang";
+
+	static function setCookie(string $lang): void {
+		CookieManager::setCookie(self::COOKIE_NAME, $lang, self::COOKIE_TTL);
+	}
+
+	static function cookieExists(): bool {
+		return CookieManager::cookieExists(self::COOKIE_NAME);
+	}
+
+	static function readCookie(): string {
+		return self::cookieExists() ? $_COOKIE[self::COOKIE_NAME] : "en";
+	}
+
+	static function clearCookie(): void {
+		CookieManager::clearCookie(self::COOKIE_NAME);
+	}
+}
 
 class LanguageHandler {
 	private const DOSSIER_LANGUES = __DIR__ . '/lang/';
@@ -107,12 +129,16 @@ class LanguageHandler {
 	static function pickLanguage(): string {
 		$output = "";
 
-		if (!isset($_GET["lang"])) {
-			$commonLangs = self::getCommonLanguages();
-			$output = count($commonLangs) > 0 ? $commonLangs[0] : "en";
+		if (!LangCookieManager::cookieExists()) {
+			if (!isset($_GET["lang"])) {
+				$commonLangs = self::getCommonLanguages();
+				$output = count($commonLangs) > 0 ? $commonLangs[0] : "en";
+			} else {
+				$lang = $_GET["lang"];
+				$output = in_array($lang, self::getKnownLanguages()) ? $lang : "en";
+			}
 		} else {
-			$lang = $_GET["lang"];
-			$output = in_array($lang, self::getKnownLanguages()) ? $lang : "en";
+			$output = LangCookieManager::readCookie();
 		}
 
 		return $output;
