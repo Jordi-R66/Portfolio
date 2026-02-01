@@ -13,6 +13,10 @@ $tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, "header"));
 $tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, "footer"));
 $tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, $page));
 
+if (!isset($tagDict["lang_code"])) {
+	$tagDict["lang_code"] = $lang;
+}
+
 $content = PageLoader::replaceTextTag($tagDict, $content);
 
 echo $content;
