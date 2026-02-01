@@ -1,0 +1,41 @@
+text_code	text
+page_title	Jordi Rocafort - Sobre mi
+section_profile_title	Un perfil científic i tècnic
+profile_p1	Apassionat per les <strong>ciències</strong> (física, aeroespacial) tant com per la informàtica, he triat aquest camí per tal de <strong>comprendre el funcionament intern</strong> de les màquines, dissenyar eines de simulació, i no només crear interfícies gràfiques.
+profile_p2	El meu enfocament del desenvolupament es guia per la curiositat i el rigor científic: busco saber què passa "sota el capó". En lloc d'utilitzar caixes negres, sovint prefereixo reimplementar conceptes tècnics (com en els meus projectes personals) per dominar-ne els mecanismes, des de la gestió de la memòria fins als algorismes matemàtics complexos.
+section_path_title	La meva Trajectòria
+path_p1	El meu curs va començar amb un <strong>Batxillerat STI2D opció SIN</strong>, que va confirmar la meva atracció per la tècnica i em va aportar bases en electrònica i en disseny sostenible. Després vaig integrar el <strong>BUT Informàtica</strong> a Montpeller triant específicament l'itinerari <strong>DACS</strong> (Desplegament d'Aplicacions Comunicants i Segures).
+path_p2	Aquesta tria és estratègica: a diferència dels itineraris orientats al web, l'itinerari DACS es concentra en les restriccions reals dels sistemes, la xarxa i la seguretat, àmbits crucials per a la informàtica crítica.
+path_p3	No obstant això, considero que la meva veritable formació es fa també de manera <strong>autodidacta</strong>. Programant des del 2018 (Python, després C), és a través dels meus projectes personals que he adquirit la meva lògica tècnica i la meva capacitat de recerca. L'IUT m'aporta avui el marc professional indispensable: qualitat de programari, gestió de projectes i treball en equip.
+section_project_title	Projecte Professional a llarg termini
+project_p1	Al final del meu BUT, tinc previst continuar els meus estudis (Màster) o inserir-me a la vida laboral, segons les oportunitats tècniques que es presentin. Una cosa és segura, dono prioritat a la <strong>tècnica operativa</strong> per sobre de la gestió pura. Vull mantenir majoritàriament en els meus futurs llocs una part tècnica més que de gestió sense, però, descartar el treball en equip, com ho mostren els meus projectes acadèmics.
+project_p2	El meu objectiu és convertir-me en desenvolupador al sector <strong>Aeroespacial / Espacial</strong>. Vull contribuir al desenvolupament de codis crítics, ja sigui per al tractament de dades científiques, els protocols de comunicació terra-sondes, o la informàtica incrustada a bord de satèl·lits. El rigor i la fiabilitat que demana aquest sector corresponen perfectament a la meva visió de la informàtica.
+section_passions_title	Les meves passions
+passion_astro_title	Astronomia
+passion_astro_desc	Observació, mecànica celeste i seguiment de l'exploració espacial. Aquesta passió nodreix directament els meus projectes informàtics (ex: TLE-Decoder).
+passion_science_title	Ciències
+passion_science_desc	Curiositat per la física fonamental i els sistemes complexos. M'agrada lligar matemàtiques i programació.
+passion_lowlevel_title	Baix Nivell
+passion_lowlevel_desc	Interès marcat pel funcionament dels SO, la gestió de memòria (C) i l'arquitectura dels ordinadors.
+section_timeline_title	Les etapes clau
+timeline_2018	Descobriment de la programació (Python) i primers projectes personals.
+timeline_2021	Obtenció del <strong>BIA</strong> (Brevet d'Initiation Aéronautique) - Menció Molt Bé.
+timeline_2024	Batxillerat STI2D (Menció TB) i entrada al BUT Informàtica.
+timeline_2025	Primera Game Jam (Java) i desenvolupament de projectes tècnics avançats (C).
+section_tools_title	Caixa d'eines tècnica
+tools_core_title	Nucli de l'ofici
+tools_core_desc	Desenvolupament de sistemes, estructures de dades, algorísmica complexa.
+tools_sys_title	Sistemes i DevOps
+tools_sys_desc	Entorn de treball diari. Automatització i gestió de versions.
+tools_web_title	Web i Dades
+tools_web_desc	Eines necessàries per al desplegament d'aplicacions completes.
+section_inspo_title	Inspiracions
+quote_kepler	"Ubi materia, ibi geometria."
+quote_kepler_desc	Un recordatori que les matemàtiques són el llenguatge fonamental de l'univers físic.
+quote_feynman1	"For a successful technology, reality must take precedence over public relations, for nature cannot be fooled."
+quote_feynman1_desc	Informe de la comissió Rogers (Challenger), una lliçó d'humilitat i de rigor tècnic.
+quote_feynman2	"What I cannot create, I do not understand."
+quote_feynman2_desc	Trobada a la seva pissarra a la seva mort. Una màxima que recorda que la teoria no val res sense la pràctica.
+quote_sagan	"Somewhere, something incredible is waiting to be known."
+quote_sagan_desc	La curiositat científica com a motor de l'exploració.
+btn_download_cv	Descarregar el meu CV

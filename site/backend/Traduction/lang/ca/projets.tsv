@@ -1,0 +1,29 @@
+text_code	text
+page_title	Jordi Rocafort - Projectes
+tle_title	TLE-Decoder
+tle_type	Projecte personal - 2024
+tle_desc1	Havent estat (gairebé) sempre apassionat per l'aeroespacial, forçosament m'he interessat per la manera com es podia "predir" la posició de qualsevol objecte en òrbita, i calcular-la en temps real.
+tle_desc2	Al final de Batxillerat, el 2024, vaig començar doncs a treballar en aquest projecte. Em baso en les lleis de Kepler per determinar després la ubicació de qualsevol satèl·lit (incloent-hi l'ISS o el telescopi Hubble) en funció de l'hora i dels seus paràmetres orbitals (TLE).
+tle_desc3	El programa principal (el backend) està codificat en C, és ell qui efectua els càlculs matemàtics i gestiona les dades. La descàrrega dels TLE és gestionada per un script Python. També es va realitzar un prototip del programa en Python.
+tle_btn	Veure el codi font
+jav_title	Jav'Enchère
+jav_type	Projecte acadèmic
+jav_desc1	En el marc de la SAÉ del tercer semestre del meu BUT Informàtica, vaig participar en el desenvolupament d'un sistema de subhastes segures a sobre tancat (Durant les subhastes ningú coneix els preus que els compradors proposen, i es revelen al final de la fase de subhasta).
+jav_desc2	Per ser més precís, es tracta de les subhastes de Vickrey, una forma de subhastes que es basa en la teoria de jocs. En aquest model, aquell que ha proposat el preu més alt guanya la subhasta però només paga el segon preu més alt.
+jav_desc3	Durant aquest projecte em vaig encarregar principalment de l'elaboració de la comunicació entre el programari usuari i la part servidor. Vaig escriure tot el codi necessari per a la comunicació entre els usuaris i el servidor i vaig assegurar el xifratge utilitzant SSL/TLS via un certificat autosignat, i l'ús de RSA 4096. La interfície gràfica així com la lògica de la gestió de les subhastes van ser realitzades pels altres membres de l'equip.
+jav_thanks	M'agradaria saludar <a class="lien inclusion_texte" href="https://flothival.github.io/Florent_LABROUSSE-LHUISSIER/" target="_blank" rel="noopener noreferrer" style="color: var(--red);">Florent</a> i <a class="lien inclusion_texte" href="" target="_blank" rel="noopener noreferrer" style="color: var(--red);">Rayane</a> per la seva dedicació en aquesta SAÉ.
+sos_title	The Symphony Of Stars
+sos_type	Code Game Jam - 2025
+sos_desc1	El Gener de 2025, formava part d'un equip que participava a la Code Game Jam, un esdeveniment obert a tots els estudiants del públic en la francofonia durant el qual teníem una trentena d'hores per desenvolupar tot un videojoc al voltant d'un tema. Aquell any, el tema era "Melodia a l'infinit".
+sos_desc2	Vam decidir doncs desenvolupar el joc "Symphony of Stars", inspirat molt lleugerament en jocs com Elite Dangerous o Star Citizen, amb l'afegit d'una dimensió musical per correspondre al tema.
+sos_desc3	La meva participació en el joc tractava sobre l'elaboració dels diferents sistemes de coordenades necessaris per al joc. En efecte, libGDX no gestiona nativament el 3D, es tracta d'una llibreria sumària directament basada en LWJGL (lib darrere de minecraft). Això vol dir que les úniques coordenades que la lib coneix són les coordenades X, Y dels píxels a la seva finestra.
+sos_desc4	Vaig elaborar doncs el sistema de coordenades 3D que permetia col·locar els estels, un sistema 3D relatiu a la nau, així com un sistema de coordenades polars 3D per servir d'intermediari a la càmera. De manera més anecdòtica també vaig codificar el càlcul de la mida aparent dels estels. Perquè no és 3D real en el nostre joc, simplement trigonometria de nivell de secundària.
+sos_desc5	També vaig ajudar a realitzar el codi de desplaçament de la nau sobre i al voltant dels seus eixos. En efecte, la nau pot traslladar-se i pivotar sobre els seus 3 eixos: X, Y i Z.
+sos_thanks	Vull agrair a <a class="lien inclusion_texte" href="https://bastienluben.dev/" target="_blank" rel="noopener noreferrer" style="color: var(--red);">Bastien</a>, <a class="lien inclusion_texte" href="https://rybois-dev.github.io/portfolio/src/index.html" target="_blank" rel="noopener noreferrer" style="color: var(--red);">Clément</a> i <a class="lien inclusion_texte" href="https://dellarolir.github.io/Romain_Dellaroli.github.io/" target="_blank" rel="noopener noreferrer" style="color: var(--red);">Romain</a> per la seva participació a la CGJ 2025, en particular per la passió invertida durant aquesta trentena d'hores.
+sos_btn	Veure el repositori GitHub
+lib_title	myOwnCLib
+lib_type	Projecte personal
+lib_desc1	Aquest projecte va néixer d'una voluntat de comprendre què s'amaga darrere les abstraccions dels llenguatges d'alt nivell. L'objectiu és recrear "from scratch" una biblioteca estàndard C modular, portable i performant.
+lib_desc2	He implementat estructures de dades genèriques (Llistes encadenades, Diccionaris, Piles) i una gestió rigorosa de l'assignació dinàmica.
+lib_desc3	La part més tècnica concerneix el mòdul <strong>VariableSizeInt</strong> (BigInt) per manipular enters de mida arbitrària, incloent-hi l'aritmètica modular i pròximament la multiplicació de Karatsuba.
+lib_btn	Veure la biblioteca
