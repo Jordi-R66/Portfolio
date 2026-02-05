@@ -137,8 +137,6 @@ class LanguageHandler {
 				$lang = $_GET["lang"];
 				$output = in_array($lang, self::getKnownLanguages()) ? $lang : "fr";
 			}
-
-			LangCookieManager::setCookie($output);
 		} else {
 			$output = LangCookieManager::readCookie();
 		}
