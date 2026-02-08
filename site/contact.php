@@ -20,7 +20,7 @@ if (isset($_GET["statut"]) && ($_GET["statut"] === "0" || $_GET["statut"] === "1
 	$status = "<h4 style=\"color: $color;\">$texte</h4>";
 }
 
-$tagDict = array("MESSAGE_STATUS" => $status);
+$tagDict = array("MESSAGE_STATUS" => $status, "copyright_year" => date("Y"));
 $tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, "header"));
 $tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, "footer"));
 $tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, $page));
