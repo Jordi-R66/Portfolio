@@ -1,0 +1,104 @@
+@import url("variables.css");
+
+#login-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 30px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+#login-box h3 {
+	color: var(--red);
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+#login-formulaire {
+	flex: 2;
+	/* Prend 2x plus de place que la gauche */
+	min-width: 300px;
+	display: flex;
+	justify-content: center;
+}
+
+#login-formulaire form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	background-color: var(--dark-blue);
+	padding: 40px;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#login-formulaire label {
+	text-align: left;
+	font-weight: bold;
+	color: var(--light-grey);
+	margin-bottom: -10px;
+	/* Rapproche le label de l'input */
+	margin-left: 5px;
+}
+
+/* --- INPUTS & TEXTAREA MODERNES --- */
+
+#login-formulaire input,
+#login-formulaire textarea {
+	width: 100%;
+	padding: 15px;
+	font-size: 1rem;
+	border-radius: 8px;
+	border: 2px solid transparent;
+	/* Bordure invisible par défaut */
+	background-color: rgba(0, 0, 0, 0.2);
+	/* Fond sombre */
+	color: white;
+	font-family: inherit;
+	box-sizing: border-box;
+	transition: all 0.3s ease;
+}
+
+#login-formulaire textarea {
+	height: 150px;
+	resize: vertical;
+}
+
+/* État Focus (quand on clique dedans) */
+#login-formulaire input:focus,
+#login-formulaire textarea:focus {
+	outline: none;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-color: var(--red);
+	/* Bordure rouge au focus */
+	box-shadow: 0 0 8px rgba(221, 82, 77, 0.3);
+	/* Légère lueur rouge */
+}
+
+/* --- BOUTON D'ENVOI --- */
+
+#login-formulaire button {
+	margin-top: 10px;
+	padding: 15px;
+	font-size: 1.1rem;
+	font-weight: bold;
+	border-radius: 8px;
+	border: 2px solid var(--red);
+	background-color: var(--red);
+	color: white;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#login-formulaire button:hover {
+	background-color: transparent;
+	color: var(--red);
+	transform: translateY(-2px);
+	/* Petit effet de levitation */
+	box-shadow: 0 4px 10px rgba(221, 82, 77, 0.4);
+}
