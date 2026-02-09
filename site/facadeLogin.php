@@ -42,16 +42,26 @@ if (empty($username) || empty($password)) {
 $loginSuccess = UserController::login($username, $password);
 
 if ($loginSuccess) {
-    // Cas SUCCÈS :
-    // On redirige vers login.php avec le statut 1 (Vert).
-    // Note : Dans une vraie app, on redirigerait souvent vers "dashboard.php" ou "index.php".
-    // Mais je respecte ta logique actuelle qui affiche le message de succès sur login.php.
+    // Cas SUCCÈS
+
+    // Vérifie si une page cible était demandée
+    if (isset($_POST['target']) && !empty($_POST['target'])) {
+        $target = $_POST['target'];
+
+        // Petite sécurité : on s'assure que la redirection reste sur le site (commence par /)
+        // ou est une page relative simple.
+        if (strpos($target, '/') === 0 || strpos($target, 'http') === false) {
+            header("Location: " . $target);
+            exit;
+        }
+    }
+
+    // Comportement par défaut (si pas de cible ou cible invalide)
+    // Note: Rediriger vers login.php?statut=1 affiche "Succès", mais rediriger vers index.php est souvent mieux.
     header('Location: https://portfolio.jordi-rocafort.fr/login.php?statut=1');
     exit;
 } else {
-    // Cas ÉCHEC :
-    // Mauvais mot de passe ou utilisateur inconnu.
-    // On redirige avec le statut 0 (Rouge).
+    // Cas ÉCHEC
     header('Location: https://portfolio.jordi-rocafort.fr/login.php?statut=0');
     exit;
 }

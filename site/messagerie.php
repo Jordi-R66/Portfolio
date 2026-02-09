@@ -7,7 +7,11 @@ require_once __DIR__ . '/backend/Messagerie/messagerie.php';
 require_once __DIR__ . '/backend/misc.php';
 
 if (UserController::validateConnection() !== UserController::CONN_OK) {
-	header("Location: https://portfolio.jordi-rocafort.fr/login.php");
+	// On récupère l'URL actuelle (ex: /messagerie.php)
+	$target = urlencode($_SERVER['REQUEST_URI']);
+
+	// On redirige vers login en passant la cible en paramètre
+	header("Location: https://portfolio.jordi-rocafort.fr/login.php?target=$target");
 	exit;
 } else {
 	$page = getCurrentPage();

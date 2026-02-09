@@ -10,12 +10,22 @@ $lang = "fr";
 $content = PageLoader::loadHTML($page);
 $statusHTML = ""; // Variable vide par défaut
 
+$targetInput = "";
+// Si une cible est définie dans l'URL (ex: login.php?target=/messagerie.php)
+if (isset($_GET['target'])) {
+	// On nettoie la valeur pour éviter les failles XSS
+	$targetVal = htmlspecialchars($_GET['target']);
+	// On crée l'input HTML caché
+	$targetInput = "<input type='hidden' name='target' value='$targetVal'>";
+}
+
 // 2. Vérification de la connexion active
 // Si l'utilisateur est déjà connecté (cookie valide), on le redirige immédiatement.
 if (UserController::validateConnection() === UserController::CONN_OK) {
 	header("Location: https://portfolio.jordi-rocafort.fr/index.php");
 	exit;
 } else {
+
 	// 3. Gestion des messages d'erreur/succès via $_GET
 	if (isset($_GET["statut"])) {
 
@@ -54,7 +64,11 @@ if (UserController::validateConnection() === UserController::CONN_OK) {
 
 	// 4. Remplacement des tags et affichage
 	// On injecte le bloc HTML complet dans le tag MESSAGE_STATUS
-	$tagDict = array("MESSAGE_STATUS" => $statusHTML, "copyright_year" => date("Y"));
+	$tagDict = array(
+		"MESSAGE_STATUS" => $statusHTML,
+		"form_target_input" => $targetInput,
+		"copyright_year" => date("Y")
+	);
 	$tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, "header"));
 
 	if (!isset($tagDict["lang_code"])) {
