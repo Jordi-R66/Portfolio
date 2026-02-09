@@ -71,9 +71,60 @@ END;
 $$ LANGUAGE plpgsql;
 
 CREATE TRIGGER trigger_no_update
-    BEFORE UPDATE ON public.auth_codes -- Remplace par le nom de ta table
-    FOR EACH ROW
-    EXECUTE FUNCTION prevent_modifications();
+	BEFORE UPDATE ON public.auth_codes -- Remplace par le nom de ta table
+	FOR EACH ROW
+	EXECUTE FUNCTION prevent_modifications();
+
+CREATE OR REPLACE FUNCTION public.creer_utilisateur(
+	p_username TEXT, 
+	p_password_clair TEXT
+) RETURNS INTEGER AS $$
+DECLARE
+	v_new_id INTEGER;
+BEGIN
+	INSERT INTO public.users (username, passHash, lastConn)
+	VALUES (
+		p_username,
+		-- Hachage avec Blowfish (Bcrypt), coût 10
+		crypt(p_password_clair, gen_salt('bf', 10)),
+		NOW()
+	)
+	RETURNING userId INTO v_new_id;
+
+	RETURN v_new_id;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE OR REPLACE FUNCTION public.changer_mdp(
+	p_username TEXT, 
+	p_nouveau_mdp TEXT
+) RETURNS VOID AS $$
+BEGIN
+	UPDATE public.users
+	SET passHash = crypt(p_nouveau_mdp, gen_salt('bf', 10))
+	WHERE username = p_username;
+
+	IF NOT FOUND THEN
+		RAISE EXCEPTION 'Utilisateur % introuvable', p_username;
+	END IF;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE OR REPLACE FUNCTION public.admin_reset_password(
+	p_username TEXT, 
+	p_new_password TEXT
+) RETURNS VOID AS $$
+BEGIN
+	UPDATE public.users
+	SET passHash = crypt(p_new_password, gen_salt('bf', 10))
+	WHERE username = p_username;
+
+	-- Petite sécurité : lève une erreur si l'utilisateur n'existe pas
+	IF NOT FOUND THEN
+		RAISE EXCEPTION 'Utilisateur % introuvable', p_username;
+	END IF;
+END;
+$$ LANGUAGE plpgsql;
 
 INSERT INTO public.codesStatutSms (codeStatut, codeDesc) VALUES (200, 'Succès');
 INSERT INTO public.codesStatutSms (codeStatut, codeDesc) VALUES (400, 'Paramètre manquant');

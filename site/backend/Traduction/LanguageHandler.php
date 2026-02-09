@@ -1,7 +1,7 @@
 <?php
 
 require_once "langMenuGenerator.php";
-require __DIR__ . "/../CookieManager.php";
+require_once __DIR__ . "/../CookieManager.php";
 
 class LangCookieManager {
 	private const COOKIE_TTL = 86400;
