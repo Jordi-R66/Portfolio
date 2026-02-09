@@ -6,7 +6,7 @@ require_once __DIR__ . '/backend/Traduction/LanguageHandler.php';
 require_once __DIR__ . '/backend/Messagerie/messagerie.php';
 require_once __DIR__ . '/backend/misc.php';
 
-if (UserController::validateConnection()) {
+if (UserController::validateConnection() !== UserController::CONN_OK) {
 	header("Location: https://portfolio.jordi-rocafort.fr/login.php");
 	exit;
 } else {

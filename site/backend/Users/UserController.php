@@ -40,7 +40,8 @@ class UserController
 
 			// 2. Vérifier le mot de passe
 			// password_verify() est compatible avec les hashs Blowfish ($2a$) générés par pgcrypto
-			if (!password_verify($password, $user['passHash'])) {
+			if (!password_verify($password, $user['passhash'])) {
+				//var_dump($user);
 				return false;
 			}
 
@@ -52,16 +53,16 @@ class UserController
                           RETURNING codeUUID";
 
 			$stmtInsert = $pdo->prepare($sqlInsert);
-			$stmtInsert->execute(['uid' => $user['userId']]);
+			$stmtInsert->execute(['uid' => $user['userid']]);
 			$result = $stmtInsert->fetch(PDO::FETCH_ASSOC);
 
-			$uuidGenereted = $result['codeUUID'];
+			$uuidGenereted = $result['codeuuid'];
 
 			// 4. Mettre à jour la date de dernière connexion (Audit)
 			// On utilise CURRENT_TIMESTAMP pour la précision
 			$sqlUpdate = "UPDATE public.users SET lastConn = CURRENT_TIMESTAMP WHERE userId = :uid";
 			$stmtUpdate = $pdo->prepare($sqlUpdate);
-			$stmtUpdate->execute(['uid' => $user['userId']]);
+			$stmtUpdate->execute(['uid' => $user['userid']]);
 
 			// 5. Poser le cookie via le Manager
 			CookieManager::setCookie(self::COOKIE_NAME, $uuidGenereted, self::SESSION_TTL_SECONDS);
