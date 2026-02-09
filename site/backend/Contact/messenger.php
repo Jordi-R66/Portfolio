@@ -64,7 +64,7 @@ function checkIp(string $ip): bool {
 	if ($row != false) {
 		$ts = intval($row[0]);
 
-		if (($msg_ts - $ts) >= (15 * 60 * 0)) {
+		if (($msg_ts - $ts) >= (15 * 60)) {
 			$output = true;
 		} else {
 			$output = false;
