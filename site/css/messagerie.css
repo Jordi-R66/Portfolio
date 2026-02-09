@@ -1,0 +1,142 @@
+@import url("variables.css");
+
+/* Conteneur principal */
+main {
+	width: 90%;
+	max-width: 1200px;
+	margin: 40px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+/* Titre de la section (facultatif si vous en ajoutez un) */
+h2 {
+	color: var(--red);
+	border-bottom: 2px solid var(--red);
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+/* Grille de messages */
+.messages-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+/* --- CARTE MESSAGE --- */
+.message-card {
+	background-color: var(--dark-blue);
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	transition: transform 0.2s, box-shadow 0.2s;
+	border-left: 5px solid transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.message-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* États LU / NON LU */
+.message-card.not-read {
+	border-left-color: var(--red);
+	background-color: #34495e;
+	/* Un peu plus clair pour attirer l'oeil */
+}
+
+.message-card.is-read {
+	border-left-color: var(--light-grey);
+	opacity: 0.8;
+}
+
+/* --- EN-TÊTE DE la CARTE --- */
+.msg-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	padding-bottom: 10px;
+}
+
+.msg-id {
+	font-size: 0.8rem;
+	color: var(--light-grey);
+	font-family: monospace;
+}
+
+.msg-status {
+	font-size: 0.75rem;
+	font-weight: bold;
+	padding: 3px 8px;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+
+.not-read .msg-status {
+	background-color: var(--red);
+	color: white;
+}
+
+.is-read .msg-status {
+	background-color: #555;
+	color: #ccc;
+}
+
+/* --- CORPS DE la CARTE --- */
+.msg-subject {
+	color: var(--red);
+	font-size: 1.2rem;
+	margin: 0 0 10px 0;
+	font-weight: bold;
+}
+
+.msg-body {
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	border-radius: 5px;
+	color: var(--light-grey);
+	font-size: 0.95rem;
+	line-height: 1.5;
+	margin-bottom: 15px;
+	white-space: pre-wrap;
+	/* Conserve les retours à la ligne */
+	max-height: 150px;
+	overflow-y: auto;
+	/* Scroll si le message est très long */
+}
+
+/* --- PIED DE PAGE DE LA CARTE --- */
+.msg-footer {
+	font-size: 0.85rem;
+	color: #aaa;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.msg-info {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.msg-info svg {
+	width: 16px;
+	height: 16px;
+	fill: var(--red);
+}
+
+.msg-date {
+	margin-top: 10px;
+	text-align: right;
+	font-size: 0.75rem;
+	font-style: italic;
+	color: var(--light-grey);
+}
