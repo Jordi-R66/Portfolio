@@ -47,12 +47,21 @@ echo "3. Décompression et Mise en place à distance..."
 # Décompression et nettoyage à distance
 ssh "$REMOTE_HOST" <<'REMOTE'
 cd serv_web_temp/portfolio/ || exit 1
-echo "Contenu du dossier avant décompression :"
-ls -l
-pwd
-tar -xJf portfolio_web.tar.xz site/
-mv site/* .
-rm -rf site/ *.tar.xz
+
+# On extrait en retirant le premier dossier parent ("site/")
+# Cela dépose tout (y compris les fichiers cachés) directement dans le dossier courant
+tar -xJf portfolio_web.tar.xz --strip-components=1
+
+# Plus besoin de 'mv' ni de nettoyage complexe
+rm -f portfolio_web.tar.xz
+
+# (Optionnel) Vérification que le fichier caché est bien là
+if [ -d ".well-known" ]; then
+    echo "✅ Dossier .well-known bien extrait."
+else
+    echo "⚠️ Attention : .well-known absent (vérifiez qu'il existe sur votre PC local)."
+fi
+
 echo "Déploiement terminé sur le VPS." && exit
 REMOTE
 

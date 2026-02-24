@@ -3,7 +3,10 @@ User-agent: *
 # Bloquer tous les dossiers backend partout
 Disallow: /backend/*
 
-# Autoriser tout le portfolio
+# Bloquer l'indexation des PDF (CV, etc.)
+Disallow: /resources/*.pdf
+
+# (Facultatif) Autoriser tout le portfolio
 Allow: /index.php
 
 Sitemap: https://portfolio.jordi-rocafort.fr/sitemap.xml
