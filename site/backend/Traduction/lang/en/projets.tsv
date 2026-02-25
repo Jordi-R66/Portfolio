@@ -2,7 +2,7 @@ text_code	text
 page_title	Jordi Rocafort - Projects
 tle_title	TLE-Decoder
 tle_type	Personal project - 2024
-tle_desc1	Having (almost) always been passionate about aerospace, je me suis forcément intéressé à la manière dont l'on pouvait "prédire" la position de n'importe quel objet en orbite, et la calculer en temps réel.
+tle_desc1	Having (almost) always been passionate about aerospace, I could only get interest by the different ways to "predict" the position of any object in orbit, and how we compute it in real time.
 tle_desc2	At the end of my 12th grade, in 2024, I started working on this projet. I use Kepler laws to then determinate the position of any tracked object in Earth orbit (including the ISS or the Hubble space telescope for example) given the current time and its orbital elements (TLE).
 tle_desc3	The main program is written in C, it runs all the computation and handles the data. The TLEs are downloaded by a Python script using Celestrak's services. A prototype was also written in Python.
 tle_btn	See the source code
