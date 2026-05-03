@@ -25,7 +25,7 @@ lib_title	myOwnCLib
 lib_type	Personal project
 lib_desc1	This project was born out of the need of understanding the abstractions behind high-level languages. The goal is to create "from scratch" a modular C standard library that is both portable and powerful.
 lib_desc2	I implemented generic data structures (linked lists, matrices, stacks) and a rigourous handling of dynamic memory allocation.
-lib_desc3	The most technical part of the project is the <strong>VariableSizeInt</strong> (BigInt) module, it handles arbitrarly-sized integers, including modular arithmetics, and in a near future Karatsuba's multiplication.
+lib_desc3	The most technical part of the project is the <strong>CustomSizeInt</strong> (BigInt) module, it handles arbitrarly-sized integers, including modular arithmetics, and in a near future Karatsuba's multiplication.
 lib_btn	See the library
 tag_maths	Mathematics
 tag_meca_orb	Orbital Mechanics
