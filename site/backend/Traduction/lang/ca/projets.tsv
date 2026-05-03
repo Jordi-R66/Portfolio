@@ -1,6 +1,6 @@
 text_code	text
 page_title	Jordi Rocafort - Projectes
-tle_title	TLE-Decoder
+tle_title	KeplerTrack (anteriorment TLE-Decoder)
 tle_type	Projecte personal - 2024
 tle_desc1	Havent estat (gairebé) sempre apassionat per l'aeroespacial, forçosament m'he interessat per la manera com es podia "predir" la posició de qualsevol objecte en òrbita, i calcular-la en temps real.
 tle_desc2	Al final de Batxillerat, el 2024, vaig començar doncs a treballar en aquest projecte. Em baso en les lleis de Kepler per determinar després la ubicació de qualsevol satèl·lit (incloent-hi l'ISS o el telescopi Hubble) en funció de l'hora i dels seus paràmetres orbitals (TLE).

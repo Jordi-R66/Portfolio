@@ -15,12 +15,12 @@ main {
 /* --- CARTE PROJET --- */
 .projet {
 	display: flex;
-	flex-direction: row;
-	/* Image à gauche, Texte à droite */
+	flex-direction: column;
+	/* Force l'affichage en colonne de haut en bas */
 	align-items: flex-start;
-	gap: 40px;
+	gap: 30px;
 	background-color: var(--dark-blue);
-	padding: 30px;
+	padding: 40px;
 	border-radius: 15px;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 	width: 100%;
@@ -28,49 +28,89 @@ main {
 	transition: transform 0.3s ease;
 }
 
-/* ALTERNANCE : Un projet sur deux a l'image à droite */
-.projet:nth-child(even) {
-	flex-direction: row-reverse;
-}
-
 .projet:hover {
 	transform: translateY(-5px);
-	/* Petit effet de levitation */
 }
 
-/* --- TEXTES & TITRES --- */
+/* --- EN-TÊTE (Titre + Tags) --- */
+.en-tete-projet {
+	width: 100%;
+}
+
 .projet h2 {
 	color: var(--red);
 	margin-top: 0;
-	font-size: 2rem;
-	margin-bottom: 10px;
+	font-size: 2.2rem;
+	margin-bottom: 5px;
 }
 
 .infos-projet p.type-projet {
 	color: var(--light-grey);
 	font-style: italic;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	font-weight: bold;
 }
 
-.description-projet {
-	flex: 1;
-	/* Prend l'espace restant */
-	text-align: justify;
-	line-height: 1.6;
-	color: #eee;
+/* --- CARROUSEL CSS (Scroll Snap) --- */
+.carousel-container {
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.2);
+	/* Fond légèrement assombri pour faire ressortir les images */
+	border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.carousel {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+	gap: 0;
+}
+
+.carousel::-webkit-scrollbar {
+	height: 8px;
+}
+
+.carousel::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.carousel::-webkit-scrollbar-thumb {
+	background: var(--red);
+	border-radius: 4px;
 }
 
 /* --- IMAGE DU PROJET --- */
-.illus-projet {
-	width: 45%;
-	/* Prend un peu moins de la moitié */
-	max-width: 500px;
-	height: auto;
-	border-radius: 10px;
-	border: 2px solid rgba(255, 255, 255, 0.1);
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-	object-fit: cover;
+.carousel .illus-projet {
+	/* 1. On force l'image à prendre toute la largeur du carrousel pour le scroll-snap */
+	flex: 0 0 100%;
+	width: 100%;
+
+	/* 2. On fixe la hauteur maximale voulue */
+	height: 100%;
+	/* Permet d'utiliser l'espace du conteneur parent s'il en a */
+	max-height: 690px;
+
+	/* 3. On utilise object-fit pour que l'image s'adapte à ce "cadre" 100% x 690px sans se déformer */
+	object-fit: contain;
+
+	scroll-snap-align: center;
+	border-radius: 0;
+	border: none;
+	box-shadow: none;
+	margin: 0;
+}
+
+/* --- DESCRIPTION --- */
+.description-projet {
+	width: 100%;
+	/* S'assure que le texte prend toute la largeur dispo */
+	text-align: justify;
+	line-height: 1.6;
+	color: #eee;
 }
 
 /* --- BADGES TECHNIQUES (Style importé de moi.php) --- */

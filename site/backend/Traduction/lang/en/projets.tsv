@@ -1,6 +1,6 @@
 text_code	text
 page_title	Jordi Rocafort - Projects
-tle_title	TLE-Decoder
+tle_title	KeplerTrack (formerly TLE-Decoder)
 tle_type	Personal project - 2024
 tle_desc1	Having (almost) always been passionate about aerospace, I could only get interest by the different ways to "predict" the position of any object in orbit, and how we compute it in real time.
 tle_desc2	At the end of my 12th grade, in 2024, I started working on this projet. I use Kepler laws to then determinate the position of any tracked object in Earth orbit (including the ISS or the Hubble space telescope for example) given the current time and its orbital elements (TLE).
