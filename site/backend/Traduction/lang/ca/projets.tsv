@@ -27,3 +27,6 @@ lib_desc1	Aquest projecte va néixer d'una voluntat de comprendre què s'amaga d
 lib_desc2	He implementat estructures de dades genèriques (Llistes encadenades, Diccionaris, Piles) i una gestió rigorosa de l'assignació dinàmica.
 lib_desc3	La part més tècnica concerneix el mòdul <strong>VariableSizeInt</strong> (BigInt) per manipular enters de mida arbitrària, incloent-hi l'aritmètica modular i pròximament la multiplicació de Karatsuba.
 lib_btn	Veure la biblioteca
+tag_maths	Matemàtiques
+tag_meca_orb	Mecànica Orbital
+tag_reseau	Xarxa

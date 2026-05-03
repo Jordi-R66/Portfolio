@@ -27,3 +27,6 @@ lib_desc1	Ce projet est né d'une volonté de comprendre ce qui se cache derriè
 lib_desc2	J'ai implémenté des structures de données génériques (Listes chaînées, Dictionnaires, Piles) et une gestion rigoureuse de l'allocation dynamique.
 lib_desc3	La partie la plus technique concerne le module <strong>VariableSizeInt</strong> (BigInt) pour manipuler des entiers de taille arbitraire, incluant l'arithmétique modulaire et prochainement la multiplication de Karatsuba.
 lib_btn	Voir la bibliothèque
+tag_maths	Mathématiques
+tag_meca_orb	Mécanique Orbitale
+tag_reseau	Réseau
