@@ -1,7 +1,6 @@
 <?php
 
-class Message
-{
+class Message{
 	// ... (gardez vos propriétés et le constructeur existants inchangés) ...
 	private int $id;
 	private int $timestamp;

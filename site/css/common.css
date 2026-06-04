@@ -186,3 +186,29 @@ main {
 		width: 100%;
 	}
 }
+
+.notification-hidden {
+	display: none;
+}
+
+.notification-visible {
+	display: block;
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.alert-danger {
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+
+.alert-success {
+	color: #3c763d;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+}

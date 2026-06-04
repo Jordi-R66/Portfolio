@@ -6,13 +6,18 @@ require_once "Message.php";
 function listerMessages(): array {
 	$output = array();
 
-	$pdo = Database::getPDO();
-	$sql = "SELECT idMessage, timestampMessage, sujetMessage, corpsMessage, telephone, email, lu FROM messagesFormulaire ORDER BY timestampMessage DESC";
+	try {
+		$pdo = Database::getPDO();
+		$sql = "SELECT idMessage, timestampMessage, sujetMessage, corpsMessage, telephone, email, lu FROM messagesFormulaire ORDER BY timestampMessage DESC";
+		$stmt = $pdo->query($sql);
 
-	$stmt = $pdo->query($sql);
-
-	foreach ($stmt as $msg) {
-		array_push($output, Message::MessageFromArray($msg));
+		if ($stmt) {
+			foreach ($stmt as $msg) {
+				array_push($output, Message::MessageFromArray($msg));
+			}
+		}
+	} catch (PDOException $e) {
+		$output = array();
 	}
 
 	return $output;

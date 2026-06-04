@@ -1,61 +1,32 @@
 <?php
 
-/*
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-ini_set('log_errors', '1');
-ini_set('error_log', __DIR__ . '/php-error.log');
-
-var_dump($_POST);*/
-
 $format_temps = "[d/m/Y @ H:i:s]";
+$regexMail = '/^[^\s@]+@[^\s@]+\.[^\s@]+$/';
+$regexTel = '/^\+?(\d{1,3})?[\s.-]?(?:\(?\d{1,4}\)?[\s.-]?)*\d{1,4}$/';
 
-$REGEX_MAIL = '/^[^\s@]+@[^\s@]+\.[^\s@]+$/';
-$REGEX_TEL = '/^\+?(\d{1,3})?[\s.-]?(?:\(?\d{1,4}\)?[\s.-]?)*\d{1,4}$/';
-
-$sujet = $_POST["objet"];
-$corps = $_POST["corps"];
-$telephone = $_POST["telephone"];
-$email = $_POST["email"];
-
-$continuer = true;
-
-// Vérif num téléphone / email
-
-$continuer = $continuer && ((!is_null($telephone)) || (!is_null($email)));
-$continuer = $continuer && (preg_match($REGEX_MAIL, $email) || preg_match($REGEX_TEL, $telephone));
+$sujet = $_POST["objet"] ?? '';
+$corps = $_POST["corps"] ?? '';
+$telephone = $_POST["telephone"] ?? '';
+$email = $_POST["email"] ?? '';
 
 $rt = 0;
+$ip = $_SERVER["REMOTE_ADDR"] ?? '';
 
-if ($continuer) {
-	$ip = $_SERVER["REMOTE_ADDR"];
+require_once "backend/Contact/messenger.php";
 
-	if (is_null($telephone)) {
-		$telephone = "";
-	}
+$hasContactInfo = (!empty($telephone) || !empty($email));
+$isValidFormat = (preg_match($regexMail, $email) || preg_match($regexTel, $telephone));
 
-	if (is_null($email)) {
-		$email = "";
-	}
+if ($hasContactInfo && $isValidFormat && !empty($ip) && checkIp($ip)) {
+	$temps = date($format_temps);
+	$texteSMS = "$temps Nouveau message déposé sur le portfolio";
 
-	require_once "backend/Contact/messenger.php";
+	ajouterMessage($ip, $sujet, $corps, $telephone, $email);
+	$codeRetour = envoyerSms($texteSMS);
+	ajouterSMS($texteSMS, $codeRetour);
 
-	$canSend = checkIp($ip);
-
-	if ($canSend) {
-		$temps = date($format_temps);
-		$texteSMS = "$temps Nouveau message déposé sur le portfolio";
-
-		ajouterMessage($ip, $sujet, $corps, $telephone, $email);
-		$codeRetour = envoyerSms($texteSMS);
-
-		ajouterSMS($texteSMS, $codeRetour);
-		$rt = 1;
-	}
+	$rt = 1;
 }
 
-header("Location: https://portfolio.jordi-rocafort.fr/contact.php?statut=$rt");
-exit;
-
-?>
+header("Location: https://portfolio.jordi-rocafort.fr/contact.php?statut=" . $rt);
+exit();

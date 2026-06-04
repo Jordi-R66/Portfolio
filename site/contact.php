@@ -5,32 +5,30 @@ require_once __DIR__ . '/backend/Traduction/LanguageHandler.php';
 require_once __DIR__ . '/backend/misc.php';
 
 $page = getCurrentPage();
-$lang = LanguageHandler::pickLanguage();
-
 $content = PageLoader::loadHTML($page);
+$currentLang = LanguageHandler::pickLanguage();
 
-$status = "";
+$translations = LanguageHandler::getPageText($currentLang, "contact");
+$statusParam = $_GET['statut'] ?? '-1';
 
-if (isset($_GET["statut"]) && ($_GET["statut"] === "0" || $_GET["statut"] === "1")) {
-	$sent = intval($_GET["statut"]) == 1;
-
-	$color = $sent == true ? "green" : "red";
-	$texte = $sent == true ? "Votre message a pu être envoyé !" : "Votre message n'a pas pu être envoyé, veuillez réessayer plus tard";
-
-	$status = "<h4 style=\"color: $color;\">$texte</h4>";
+$statusText = "";
+if ($statusParam === '0') {
+	$statusText = $translations['msg_error'] ?? '';
+}
+if ($statusParam === '1') {
+	$statusText = $translations['msg_success'] ?? '';
 }
 
-$tagDict = array("MESSAGE_STATUS" => $status, "copyright_year" => date("Y"));
-$tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, "header"));
-$tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, "footer"));
-$tagDict = array_merge($tagDict, LanguageHandler::getPageText($lang, $page));
+$tagDict = [
+	"copyright_year" => date("Y"),
+	"MESSAGE_STATUS" => $statusText
+];
 
-if (!isset($tagDict["lang_code"])) {
-	$tagDict["lang_code"] = $lang;
-}
+$tagDict = array_merge($tagDict, LanguageHandler::getPageText($currentLang, "header"));
+$tagDict = array_merge($tagDict, LanguageHandler::getPageText($currentLang, "footer"));
+$tagDict = array_merge($tagDict, $translations);
 
 $content = PageLoader::replaceTextTag($tagDict, $content);
 
 echo $content;
-exit;
-?>
+exit();

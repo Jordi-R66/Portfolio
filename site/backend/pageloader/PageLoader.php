@@ -3,11 +3,6 @@
 class PageLoader {
 	private const HTML_DIR = __DIR__ . "/../html";
 
-	/**
-	 * @param array $lookup An array with the tag name as a key, and the value to replace with
-	 * @param string $html self-explanatory
-	 * @return string the full html page
-	 */
 	static function replaceTextTag(array $lookup, string $html): string {
 		$output = $html;
 
@@ -18,33 +13,28 @@ class PageLoader {
 		return $output;
 	}
 
-	/**
-	 * @param string pageName directly used to load the matching html file
-	 * @return string the full html page
-	 */
 	static function loadHTML(string $pageName): string {
 		$output = "";
+		$filePath = PageLoader::HTML_DIR . "/$pageName.html";
 
-		$fp = fopen(PageLoader::HTML_DIR . "/$pageName.html", "r");
+		if (file_exists($filePath)) {
+			$fp = fopen($filePath, "r");
+			if ($fp) {
+				while (($line = fgets($fp)) !== false) {
+					$line = str_replace("\n", "", $line);
+					$temp_line = str_replace("\t", "", $line);
 
-		if ($fp) {
-			while (($line = fgets($fp)) !== false) {
-				$line = str_replace("\n", "", $line);
-				$temp_line = str_replace("\t", "", $line);
+					if (str_starts_with($temp_line, "REQ ")) {
+						$requirement = explode(" ", $temp_line)[1];
+						$line = PageLoader::loadHTML(str_replace(".html", "", $requirement));
+					}
 
-				if (str_starts_with($temp_line, "REQ ")) {
-					$requirement = explode(" ", $temp_line)[1];
-					$line = PageLoader::loadHTML(str_replace(".html", "", $requirement));
+					$output = "$output$line\n";
 				}
-
-				$output = "$output$line\n";
+				fclose($fp);
 			}
-
-			fclose($fp);
 		}
 
 		return $output;
 	}
 }
-
-?>
