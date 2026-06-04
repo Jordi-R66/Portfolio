@@ -1,0 +1,6 @@
+text_code	text
+page_title	Jordi Rocafort - Expérience
+exp_1_title	Développeur Logiciel (Django)
+exp_1_type	13 Avril 2026 - 03 Juillet 2026 | Centre Spatial de l'Université de Montpellier (CSUM)
+exp_1_desc1	Développement logiciel pour le segment sol de projets satellites au sein du centre spatial.
+exp_1_desc2	Conception, réalisation et déploiement via Docker de la nouvelle SRDB (Satellite Reference DataBase) du centre en Full-Stack Django. Ce composant critique centralise la configuration, les modes de fonctionnement, les transitions de modes, les télécommandes et la télémétrie nécessaires au contrôle et à l'exploitation du satellite, en appliquant des architectures logicielles rigoureuses sous environnement Linux avec gestion de version sous Git et GitLab.

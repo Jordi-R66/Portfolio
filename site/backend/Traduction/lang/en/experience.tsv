@@ -1,0 +1,6 @@
+text_code	text
+page_title	Jordi Rocafort - Experience
+exp_1_title	Software Developer (Django)
+exp_1_type	13 April 2026 - 03 July 2026 | Montpellier University Space Centre (CSUM)
+exp_1_desc1	Software development for the ground segment of satellite projects within the space centre.
+exp_1_desc2	Design, development and Docker-based deployment of the centre's new SRDB (Satellite Reference DataBase) in Full-Stack Django. This mission-critical component centralises the configuration, operational modes, mode transitions, telecommands and telemetry required to control and operate the satellite, applying rigorous software architectures under a Linux environment with version control using Git and GitLab.

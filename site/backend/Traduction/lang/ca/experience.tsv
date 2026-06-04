@@ -1,0 +1,6 @@
+text_code	text
+page_title	Jordi Rocafort - Experiència
+exp_1_title	Desenvolupador de Programari (Django)
+exp_1_type	13 d'abril de 2026 - 3 de juliol de 2026 | Centre Espacial de la Universitat de de Montpeller (CSUM)
+exp_1_desc1	Desenvolupament de programari per al segment de terra de projectes de satèl·lits dins del centre espacial.
+exp_1_desc2	Disseny, realització i desplegament mitjançant Docker de la nova SRDB (Satellite Reference DataBase) del centre en Full-Stack Django. Aquest component crític centralitza la configuració, els modes de funcionament, les transicions de modes, els telecomandaments i la telemetria necessaris per al control i l'explotació del satèl·lit, aplicant arquitectures de programari rigoroses sota entorn Linux amb gestió de versions mitjançant Git i GitLab.
